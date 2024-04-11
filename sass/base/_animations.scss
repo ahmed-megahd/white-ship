@@ -1,0 +1,44 @@
+@keyframes slideRight1 {
+  0% {
+    opacity: 0;
+    transform: translate(0.5rem, -1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(3.5rem, -1rem);
+  }
+}
+
+@keyframes slideRight2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-3.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes widthEnlarge {
+  0% {
+    opacity: 0;
+    width: 35%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 55%;
+  }
+}
+
+@keyframes rotateArrow {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(150%) rotate(360deg);
+  }
+}

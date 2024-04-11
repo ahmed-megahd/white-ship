@@ -1,0 +1,99 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-secondary;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+  overflow: hidden;
+  border: 0;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 100%;
+    border-radius: 0;
+    background-color: $color-primary;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: 0.3s;
+  }
+
+  &:hover {
+    color: $color-white;
+
+    &::before {
+      width: 90%;
+      //   z-index: 1;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &_submit {
+    width: 100%;
+    z-index: 1000;
+
+    &::before {
+      background-color: $color-primary !important;
+    }
+
+    &:hover {
+      color: $color-white;
+      // color: $color-secondary !important;
+      z-index: 999;
+    }
+  }
+
+  &-1 {
+    width: 45%;
+    font-size: $default-font-size;
+    animation: slideRight2 2s;
+  }
+
+  &--2 {
+    background-color: $color-primary;
+    padding: 1.5rem 2rem;
+
+    &:hover::before {
+      background-color: $color-secondary;
+    }
+  }
+
+  &-service {
+    // width: 30%;
+    padding: 0.5rem 2rem;
+    background-color: $color-primary;
+
+    &:hover::before {
+      background-color: $color-secondary;
+    }
+  }
+}
+
+.btn-container {
+  width: 70%;
+
+  &-1 {
+    text-align: right;
+  }
+
+  &-service {
+    width: 100%;
+    position: absolute;
+    top: 16.7rem;
+    right: 0;
+    text-align: end;
+  }
+}
