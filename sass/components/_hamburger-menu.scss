@@ -12,6 +12,7 @@ $hover-translate: 2px; // Adjust the amount of translation on hover
   margin-right: 2rem;
   position: relative;
   cursor: pointer;
+  z-index: 100;
 
   span {
     color: $color-white;

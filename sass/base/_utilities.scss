@@ -6,4 +6,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &--1 {
+    width: 90%;
+  }
+}
+
+.mv-right {
+  transform: translateX(0) !important;
 }
