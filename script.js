@@ -23,7 +23,6 @@ showSlides(slideIndex, "slideshow-slide", "dot");
 
 // Next/previous controls
 function plusSlides(n) {
-  console.log("clciked");
   showSlides((slideIndex += n), "slideshow-slide", "dot");
 }
 // Thumbnail image controls
@@ -56,13 +55,13 @@ function showSlides(n, slideClassName, dotClassName) {
   dots[slideIndex - 1].className += " active-dot";
 }
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  // direction: horizontal,
-  // loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// var swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   // direction: horizontal,
+//   // loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
