@@ -87,6 +87,19 @@
       background-color: $color-secondary;
     }
   }
+
+  &--cta {
+    background-color: $color-secondary;
+    // padding: 1rem 2rem;
+
+    &:hover {
+      color: $color-secondary;
+    }
+
+    &:hover::before {
+      background-color: #fff;
+    }
+  }
 }
 
 .btn-container {

@@ -46,10 +46,10 @@
       rel="stylesheet"
     />
     <!-- Link Swiper's CSS -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    /> -->
 
     <link
       rel="stylesheet"
@@ -60,6 +60,7 @@
     />
     <title>white-ship</title>
     <link rel="stylesheet" href="sass/main.css" />
+    <link rel="icon" href="imgs/logo.jpg" />
   </head>
   <body>
     <aside id="section-aside" class="section-aside">
@@ -123,11 +124,12 @@
     <header class="header">
       <div class="header_top">
         <div class="header_container">
+          <!-- <div class="header_top-bar"></div> -->
           <div class="header_navbar">
             <div class="header_logo_wrapper">
               <a href="#" class="header_img">
                 <img
-                  src="imgs/imageedit_1_2665426934-200.jpg"
+                  src="imgs/logo-removebg-preview.png"
                   alt="white-ship logo"
                 />
               </a>
@@ -748,7 +750,58 @@
           </div>
         </div>
       </div>
-      <div class="section-cta_right"></div>
+      <div class="section-cta_right">
+        <form action="post" class="form form--cta">
+          <div class="form_group">
+            <i class="fa-regular fa-user"></i>
+            <input
+              type="text"
+              class="form_input form_input--cta"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <i class="fa-regular fa-envelope"></i>
+            <input
+              type="email"
+              class="form_input form_input--cta"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <i class="fa-solid fa-phone"></i>
+            <input
+              type="number"
+              class="form_input form_input--cta"
+              placeholder="Phone"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <i class="fa-regular fa-paper-plane"></i>
+            <input
+              type="text"
+              class="form_input form_input--cta"
+              placeholder="Subject"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <textarea
+              name="comments"
+              cols="30"
+              rows="10"
+              placeholder="Comment"
+            ></textarea>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn btn--cta">Submit Message</div>
+          </div>
+        </form>
+      </div>
     </section>
     <!-- Swiper JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
