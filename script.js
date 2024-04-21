@@ -5,15 +5,15 @@ const overlay = document.createElement("div");
 overlay.classList.add("overlay");
 document.body.appendChild(overlay);
 
-headerCtaToggle.addEventListener("click", () => {
-  sectionAside.classList.add("active");
-  overlay.style.display = "block";
-});
+// headerCtaToggle.addEventListener("click", () => {
+//   sectionAside.classList.add("active");
+//   overlay.style.display = "block";
+// });
 
-headerCtaClose.addEventListener("click", () => {
-  sectionAside.classList.remove("active");
-  overlay.style.display = "none";
-});
+// headerCtaClose.addEventListener("click", () => {
+//   sectionAside.classList.remove("active");
+//   overlay.style.display = "none";
+// });
 
 //Slider Functionality Start
 let slideIndex = 1;

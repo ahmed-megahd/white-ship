@@ -14,7 +14,7 @@
   border: 0;
   position: relative;
   z-index: 1;
-  border-radius: 0.6rem;
+  // border-radius: 0.6rem;
 
   &::before {
     content: "";
@@ -30,6 +30,16 @@
     visibility: hidden;
     z-index: -1;
     transition: 0.3s;
+  }
+
+  &--value {
+    color: $color-secondary;
+    background-color: $color-white-bg;
+    font-style: italic;
+
+    &:hover {
+      color: $color-white;
+    }
   }
 
   &:hover {
@@ -72,7 +82,7 @@
 
   &-service {
     // display: none;
-    // width: 30%;
+    width: 100%;
     padding: 0.5rem 2rem;
     background-color: inherit;
     border: 1px solid $color-secondary;
@@ -89,7 +99,7 @@
   }
 
   &--cta {
-    background-color: $color-secondary;
+    background-color: $color-primary;
     // padding: 1rem 2rem;
 
     &:hover {
@@ -112,9 +122,6 @@
   &-service {
     margin-top: 1rem;
     width: 100%;
-    // position: absolute;
-    // top: 16.7rem;
-    // right: 0;
-    // text-align: end;
+    text-align: center;
   }
 }

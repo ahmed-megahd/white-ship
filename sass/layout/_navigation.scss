@@ -27,16 +27,42 @@
   &_top-bar {
     width: 100%;
     height: 4rem;
-    background-color: rgba($color: $color-secondary, $alpha: 0.3);
+    background-color: $color-secondary;
+
+    &_left {
+      align-self: flex-start;
+    }
+
+    &_right {
+      width: 10%;
+      margin-right: 6rem;
+      .icon-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      i {
+        // width: 3.6rem;
+        // height: 3.6rem;
+        font-size: 1.6rem;
+        color: $color-white;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
   }
 
   &_img {
-    max-width: 22rem;
-    overflow: hidden;
+    max-width: 20rem;
+    // overflow: hidden;
     img {
       display: inline-block;
-      transform: scale(1.3);
-      //   z-index: -1111;
+      transform: scale(1.6);
+      z-index: 11111;
       width: 100%;
       //   height: 70%;
       vertical-align: middle;
@@ -49,7 +75,7 @@
   }
 
   &_top {
-    padding: 0;
+    // padding: 2rem 0;
     // background-color: rgba($color: #111, $alpha: 0.3);
     // background-image: linear-gradient(
     //   to left bottom,
@@ -62,7 +88,8 @@
 
   &_bottom {
     z-index: 1000;
-    background-color: transparent;
+    background-color: $color-primary;
+    // padding-top: 2rem;
   }
 
   &_controls {
@@ -91,16 +118,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-left: 3rem;
+        margin-left: 2rem;
 
         i {
           font-size: 2.8rem;
           color: $color-primary;
-          width: 4rem;
-          height: 4rem;
+          // font-weight: 400;
+          width: 3.6rem;
+          height: 3.6rem;
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+
+        &--1 {
+          i {
+            font-size: 1.6rem;
+            color: $color-white;
+          }
         }
 
         &:hover {
@@ -118,6 +153,21 @@
       }
 
       &-sec {
+        color: $color-secondary;
+        font-size: 1.4rem;
+        line-height: 1.3rem;
+        font-weight: 600;
+        z-index: 1000000;
+        // font-weight: 500;
+
+        &--1 {
+          font-size: 1.3rem;
+          color: $color-white;
+        }
+
+        &:hover {
+          color: $color-primary;
+        }
       }
     }
   }
@@ -192,6 +242,9 @@
         }
       }
 
+      // &:not(:last-child) {
+      //   border-right: 1px solid $color-white;
+      // }
       &:hover {
         .header_nav-item_sub-menu {
           opacity: 1;
@@ -203,17 +256,18 @@
     &-link {
       position: relative;
       display: inline-block;
-      padding: 2rem 3rem;
+      padding: 1rem 2.5rem;
       text-transform: uppercase;
       text-align: center;
       color: $color-white;
       font-weight: 600;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       text-decoration: none;
       transition: all 0.2s;
       font-family: $headers-font;
       display: flex;
       align-items: center;
+
       span {
         text-align: center;
         font-size: 1.8rem;

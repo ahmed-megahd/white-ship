@@ -128,11 +128,13 @@
 
   &--down1,
   &--down2 {
-    transform: translateY(3rem);
+    // transform: translateY(3rem);
+    margin-top: 3rem;
   }
 
   &--down3 {
-    transform: translateY(6rem);
+    // transform: translateY(6rem);
+    margin-top: 6rem;
   }
 }
 
