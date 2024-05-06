@@ -8,7 +8,7 @@
   &_left {
     width: 5rem;
     height: 5rem;
-    border-radius: 50%;
+    // border-radius: 50%;
     border: 1px solid $color-white;
     margin-right: 1.5rem;
     display: flex;
@@ -27,9 +27,5 @@
 
   &_title {
     font-weight: 700;
-  }
-
-  &_desc {
-    font-size: 1.2rem;
   }
 }

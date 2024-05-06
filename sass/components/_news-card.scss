@@ -1,7 +1,7 @@
 .news-card {
   // width: 41rem;
   width: 31%;
-  height: 41rem;
+  height: 45rem;
   //   height: 50rem;
   // height: 70%;
   position: relative;
@@ -9,16 +9,19 @@
   img {
     display: inline-block;
     width: 100%;
-    // height: 30%;
     height: 60%;
+    // height: 20rem;
+    object-position: center;
     vertical-align: middle;
     object-fit: cover;
-    // filter: brightness(105%);
+    // overflow: hidden;
+    filter: brightness(80%);
   }
 
   &_content {
     width: 100%;
     padding: 2rem;
+    padding-top: 3rem;
     background-color: $color-white-bg;
     border: 1px solid $color-secondary;
     border-top: 0;

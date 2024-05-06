@@ -1,0 +1,15 @@
+.list {
+  list-style: none;
+  &_item {
+    font-size: 1.6rem;
+    color: rgba($color: $color-secondary, $alpha: 0.5);
+    color: $color-secondary;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    line-height: 1.9;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

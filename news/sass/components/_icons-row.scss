@@ -1,0 +1,22 @@
+.icon-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .icon-link {
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    text-decoration: none;
+
+    i {
+      font-size: 2.2rem;
+      color: $color-primary;
+    }
+
+    &:hover {
+      filter: brightness(70%);
+    }
+  }
+}

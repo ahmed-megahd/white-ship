@@ -1,0 +1,23 @@
+.value {
+  width: 31%;
+  padding: 4rem;
+  background-color: $color-white;
+  margin-bottom: 4rem;
+
+  .icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    padding-left: 0.5rem;
+    margin-bottom: 2rem;
+    i {
+      font-size: 3rem;
+      color: $color-primary;
+    }
+  }
+
+  &_title {
+    font-family: $headers-font;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
