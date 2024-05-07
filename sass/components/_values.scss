@@ -5,15 +5,16 @@
   align-items: center;
   background-color: $color-white-bg;
   padding: 2rem 2rem;
-  box-shadow: 0 5px 15px #eee;
-  border: 1px solid rgba($color: $color-secondary, $alpha: 0.7);
+  // box-shadow: 0 5px 15px #eee;
+  // border: 1px solid rgba($color: $color-secondary, $alpha: 0.7);
   &:not(:last-of-type) {
     margin-right: 2rem;
   }
 
   &_img-wrapper {
-    width: 8rem;
-    height: 8rem;
+    width: 9rem;
+    height: 9rem;
+    margin-bottom: 1rem;
     border-radius: 50%;
     // background-color: $color-primary;
     // margin-bottom: 3rem;
@@ -33,20 +34,21 @@
     font-family: $headers-font;
     // color: $color-p;
     color: $color-secondary;
-    font-weight: 600;
-    margin-bottom: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
 
   &_info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     font-family: $main-font;
     color: rgba($color: $color-primary, $alpha: 0.6);
   }
 
   &_text {
+    padding: 1rem;
     text-align: center;
     font-size: 1.6rem;
     line-height: 1.3;

@@ -84,7 +84,7 @@
     // display: none;
     width: 100%;
     padding: 1rem 2rem;
-    background-color: inherit;
+    background-color: $color-white;
     border: 1px solid $color-secondary;
     color: $color-secondary;
     letter-spacing: 1px;
@@ -107,8 +107,8 @@
   }
 
   &-service {
-    margin-top: 1rem;
-    width: 100%;
+    // margin-top: 1rem;
+    width: 50%;
     text-align: center;
   }
 }
