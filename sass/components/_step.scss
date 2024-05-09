@@ -42,7 +42,7 @@
 
     img {
       display: inline-block;
-      width: 100%;
+      max-width: 100%;
       object-fit: cover;
     }
 
@@ -76,6 +76,10 @@
     padding: 0.5rem;
     color: rgba($color: $color-secondary, $alpha: 0.7);
     // margin-bottom: 2rem;
+
+    @media screen and (max-width: $small-bp) {
+      font-size: 1.6rem;
+    }
 
     &--1 {
       text-align: center;
@@ -148,6 +152,14 @@
   top: 76%;
   transform: translateY(-74%);
   z-index: 0;
+
+  @media screen and (max-width: $large-bp) {
+    height: 80%;
+  }
+
+  @media screen and (max-width: $small-bp) {
+    height: 60%;
+  }
   // pointer-events: none;
 
   // Adjust spacing between dots

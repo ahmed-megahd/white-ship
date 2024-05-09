@@ -6,6 +6,17 @@
   // height: 70%;
   position: relative;
 
+  @media screen and (max-width: $large-bp) {
+    width: 45%;
+
+    margin-bottom: 8rem;
+  }
+
+  @media screen and (max-width: $small-bp) {
+    width: 100%;
+    // margin-bottom: 4rem;
+  }
+
   img {
     display: inline-block;
     width: 100%;

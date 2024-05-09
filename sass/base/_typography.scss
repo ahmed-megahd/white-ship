@@ -13,7 +13,14 @@
     padding: 0.5rem 1rem;
     // border-radius: 0.5rem;
   }
-  // text-transform: uppercase;
+
+  @media screen and (max-width: $large-bp) {
+    font-size: 6rem;
+  }
+
+  // @media screen and (max-width: $small-bp) {
+  //   font-size: 4rem;
+  // }
 }
 
 .heading-secondary {
@@ -49,6 +56,14 @@
     width: 75%;
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: $large-bp) {
+    font-size: 4rem;
+  }
+
+  // @media screen and (max-width: $small-bp) {
+  //   font-size: 2rem;
+  // }
 }
 
 .heading-tertiary {
@@ -72,6 +87,10 @@
 
     // border-bottom: 5px solid $color-white;
   }
+
+  @media screen and (max-width: $large-bp) {
+    // font-size: 1.4rem;
+  }
 }
 
 .paragragh-text {
@@ -81,6 +100,10 @@
   width: 100%;
   color: rgba($color: $color-secondary, $alpha: 0.7);
   margin-bottom: 2rem;
+
+  @media screen and (max-width: $large-bp) {
+    font-size: 1.8rem;
+  }
 
   &--center {
     text-align: center;
