@@ -154,11 +154,7 @@
   z-index: 0;
 
   @media screen and (max-width: $large-bp) {
-    height: 80%;
-  }
-
-  @media screen and (max-width: $small-bp) {
-    height: 60%;
+    display: none;
   }
   // pointer-events: none;
 

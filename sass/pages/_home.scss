@@ -57,14 +57,20 @@
 
 .section-main {
   width: 100%;
-  height: 90rem;
+  // height: 90rem;
   position: relative;
   // margin-top: -8rem;
   margin-bottom: 4rem;
 
   @media screen and (max-width: $large-bp) {
-    height: 80rem;
-    // margin-bottom: 4rem;
+    height: 95vh;
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: $small-bp) {
+    height: 95vh;
+    // margin-bottom: 1rem;
+    // padding-bottom: 0;
   }
 }
 
@@ -82,12 +88,14 @@
 
   @media screen and (max-width: $large-bp) {
     padding: 6rem 2rem;
+    margin-top: 4rem;
   }
 
   &_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &_heading {
@@ -97,7 +105,8 @@
 .section-values {
   @media screen and (max-width: $small-bp) {
     padding-bottom: 0;
-    margin-top: 0;
+    // margin-top: rem;
+    // margin-top: 100rem;
     &_wrapper {
       flex-direction: column;
       // align-items: center;
@@ -134,7 +143,7 @@
 
     @media screen and (max-width: $large-bp) {
       width: 100%;
-      height: 100%;
+      // height: 100%;
       // height: 40rem;
       padding: 0;
     }
@@ -186,9 +195,14 @@
 
       .section-about_img {
         display: inline-block;
-        max-width: 100%;
+        width: 100%;
         height: 100%;
         overflow: hidden;
+
+        @media screen and (max-width: $small-bp) {
+          height: 40vh;
+          // margin-bottom: 4rem;
+        }
         // object-fit: cover;
         // vertical-align: middle;
         // position: absolute;
@@ -388,7 +402,7 @@
 
       img {
         display: inline-block;
-        max-width: 100%;
+        width: 100%;
         height: 100%;
         object-fit: cover;
         transition: all 0.7s ease;
@@ -461,9 +475,6 @@
 
   @media screen and (max-width: $large-bp) {
     padding: 6rem 2rem;
-  }
-
-  @media screen and (max-width: $small-bp) {
     flex-direction: column;
   }
 
@@ -471,7 +482,7 @@
     width: 30%;
     padding: 1rem;
 
-    @media screen and (max-width: $small-bp) {
+    @media screen and (max-width: $large-bp) {
       width: 100%;
     }
 
@@ -500,7 +511,7 @@
     padding: 2rem 1rem;
     // padding-top: 4rem;
 
-    @media screen and (max-width: $small-bp) {
+    @media screen and (max-width: $large-bp) {
       width: 100%;
     }
   }

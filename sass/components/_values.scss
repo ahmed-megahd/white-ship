@@ -9,15 +9,27 @@
   // border: 1px solid rgba($color: $color-secondary, $alpha: 0.7);
   &:not(:last-of-type) {
     margin-right: 2rem;
+
+    // @media screen and (max-width: $large-bp) {
+    //   margin-right: 0;
+    // }
+  }
+
+  @media screen and (max-width: $large-bp) {
+    width: 45%;
+
+    // &:not(:last-of-type) {
+    //   margin-right: 0;
+    // }
   }
 
   @media screen and (max-width: $small-bp) {
     width: 80%;
     margin-bottom: 2rem;
 
-    &:not(:last-of-type) {
-      margin-right: 0;
-    }
+    // &:not(:last-of-type) {
+    //   margin-right: 0;
+    // }
   }
 
   &_img-wrapper {
@@ -63,6 +75,10 @@
     // margin-bottom: 1rem;
     font-family: $main-font;
     color: rgba($color: $color-primary, $alpha: 0.6);
+
+    @media screen and (max-width: $medium-bp) {
+      width: 100%;
+    }
   }
 
   &_text {
