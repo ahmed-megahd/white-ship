@@ -68,9 +68,7 @@
   }
 
   @media screen and (max-width: $small-bp) {
-    height: 95vh;
-    // margin-bottom: 1rem;
-    // padding-bottom: 0;
+    height: 100vh;
   }
 }
 
@@ -200,8 +198,8 @@
         overflow: hidden;
 
         @media screen and (max-width: $small-bp) {
-          height: 40vh;
-          // margin-bottom: 4rem;
+          height: 55vh;
+          margin-bottom: 2rem;
         }
         // object-fit: cover;
         // vertical-align: middle;

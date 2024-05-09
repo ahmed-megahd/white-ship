@@ -1715,7 +1715,7 @@ input[type=number] {
 }
 @media screen and (max-width: 479px) {
   .section-main {
-    height: 95vh;
+    height: 100vh;
   }
 }
 
@@ -1818,7 +1818,8 @@ input[type=number] {
 }
 @media screen and (max-width: 479px) {
   .section-about_left_img-container .section-about_img {
-    height: 40vh;
+    height: 55vh;
+    margin-bottom: 2rem;
   }
 }
 .section-about_right {
