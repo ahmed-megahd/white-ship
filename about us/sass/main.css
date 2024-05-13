@@ -952,7 +952,7 @@ input[type=number] {
   .section-leader,
   .section-future,
   .section-location {
-    height: 100vh;
+    height: auto;
   }
 }
 .section-mission_left,

@@ -1,9 +1,12 @@
 .mobile-menu {
   width: 100%;
-
+  font-family: $headers-font;
+  ul {
+    list-style: none;
+  }
   &_item {
     position: relative;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(#000, 0.1);
     width: 100%;
 
     .dropdown-btn {
@@ -26,6 +29,7 @@
     position: relative;
     display: block;
     font-size: 1.8rem;
+    // font-family: $headers-font;
     color: $color-secondary;
     font-weight: 700;
     padding: 2rem;
@@ -35,9 +39,10 @@
 
   &_sub {
     display: none;
+    // background-color: ;
     transition: all 0.3s;
     li {
-      border-top: 1px solid #eee;
+      border-top: 1px solid rgba(#000, 0.1);
 
       a {
         display: block;

@@ -19,7 +19,7 @@
 
   &_close {
     position: absolute;
-    top: 3rem;
+    top: 4rem;
     right: 2rem;
     width: 4rem;
     height: 4rem;
@@ -27,8 +27,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    font-size: 2rem;
-
+    font-size: 2.4rem;
     // span {
     //   position: absolute;
     //   width: 2.4rem;
@@ -46,15 +45,15 @@
     //   }
     // }
 
-    &:hover {
-      span:first-child {
-        transform: rotate(0deg);
-      }
+    // &:hover {
+    //   span:first-child {
+    //     transform: rotate(0deg);
+    //   }
 
-      span:last-child {
-        transform: rotate(180deg);
-      }
-    }
+    //   span:last-child {
+    //     transform: rotate(180deg);
+    //   }
+    // }
   }
 
   .navigation {
@@ -65,7 +64,7 @@
   &_contact {
     width: 100%;
     padding: 2rem;
-    margin-top: 2rem;
+    // margin-top: 2rem;
     display: flex;
     justify-content: space-between;
 
@@ -101,13 +100,14 @@
 
     &-info {
       font-size: 1.8rem;
+      color: $color-secondary;
       font-weight: 700;
     }
   }
 
   &_socials {
     width: 100%;
-    padding: 4rem;
+    padding: 2rem 4rem;
     // margin-top: 4rem;
     display: flex;
     align-items: center;
@@ -126,13 +126,13 @@
           align-items: center;
           justify-content: center;
           text-decoration: none;
-          width: 4rem;
-          height: 4rem;
+          width: 6rem;
+          height: 6rem;
           background-color: $color-white;
           border: 1px solid $color-primary;
 
           i {
-            font-size: 2rem;
+            font-size: 2.4rem;
             color: $color-primary;
           }
         }

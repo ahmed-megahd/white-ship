@@ -528,10 +528,14 @@ input[type=number] {
 
 .mobile-menu {
   width: 100%;
+  font-family: "Montserrat", "open-sans";
+}
+.mobile-menu ul {
+  list-style: none;
 }
 .mobile-menu_item {
   position: relative;
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 .mobile-menu_item .dropdown-btn {
@@ -563,7 +567,7 @@ input[type=number] {
   transition: all 0.3s;
 }
 .mobile-menu_sub li {
-  border-top: 1px solid #eee;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .mobile-menu_sub li a {
   display: block;
@@ -1684,6 +1688,7 @@ input[type=number] {
 }
 .header_cta {
   margin-right: 2rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
 }
@@ -1749,7 +1754,7 @@ input[type=number] {
 }
 .section-aside_close {
   position: absolute;
-  top: 3rem;
+  top: 4rem;
   right: 2rem;
   width: 4rem;
   height: 4rem;
@@ -1757,13 +1762,7 @@ input[type=number] {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  font-size: 2rem;
-}
-.section-aside_close:hover span:first-child {
-  transform: rotate(0deg);
-}
-.section-aside_close:hover span:last-child {
-  transform: rotate(180deg);
+  font-size: 2.4rem;
 }
 .section-aside .navigation {
   width: 100%;
@@ -1772,7 +1771,6 @@ input[type=number] {
 .section-aside_contact {
   width: 100%;
   padding: 2rem;
-  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -1807,11 +1805,12 @@ input[type=number] {
 }
 .section-aside_contact-info {
   font-size: 1.8rem;
+  color: #06103a;
   font-weight: 700;
 }
 .section-aside_socials {
   width: 100%;
-  padding: 4rem;
+  padding: 2rem 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1828,13 +1827,13 @@ input[type=number] {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  width: 4rem;
-  height: 4rem;
+  width: 6rem;
+  height: 6rem;
   background-color: #fff;
   border: 1px solid #174e9a;
 }
 .section-aside_socials-wrapper li a i {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #174e9a;
 }
 

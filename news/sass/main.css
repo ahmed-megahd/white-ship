@@ -44,11 +44,6 @@ body {
   background-color: #174e9a;
   padding: 0.5rem 1rem;
 }
-@media screen and (max-width: 479px) {
-  .heading-main {
-    text-align: center;
-  }
-}
 
 .heading-secondary {
   font-size: 4.2rem;

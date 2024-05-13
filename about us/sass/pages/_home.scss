@@ -56,7 +56,8 @@
   }
 
   @media screen and (max-width: $large-bp) {
-    height: 100vh;
+    // height: 100vh;
+    height: auto;
   }
 
   &_left {
