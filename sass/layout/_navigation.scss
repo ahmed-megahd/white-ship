@@ -4,15 +4,22 @@
   background-color: #ffffff;
   // box-shadow: 0px 4rem 0.05rem rgba($color: #000000, $alpha: 0.3);
 
-  @media screen and (max-width: $extra-large-bp) {
-    display: none;
-  }
-
   &_container {
     width: 100%;
     padding: 0 2rem;
     // margin-left: auto;
     // margin-right: auto;
+
+    @media screen and (max-width: $medium-bp) {
+      padding: 0;
+    }
+  }
+
+  &_mobile {
+    display: none;
+    @media screen and (max-width: $extra-large-bp) {
+      display: block;
+    }
   }
 
   &_navbar {
@@ -35,6 +42,10 @@
     width: 100%;
     height: 4rem;
     background-color: $color-secondary;
+
+    @media screen and (max-width: $extra-large-bp) {
+      display: none;
+    }
 
     &_left {
       align-self: flex-start;
@@ -79,6 +90,10 @@
   &_top,
   &_bottom {
     display: flex;
+
+    @media screen and (max-width: $extra-large-bp) {
+      display: none;
+    }
   }
 
   &_top {
@@ -307,12 +322,13 @@
   }
 
   &_cta {
-    margin-right: 4rem;
-    padding-left: 2rem;
+    margin-right: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-left: 2px solid rgba($color: #eee, $alpha: 0.3);
+
+    i {
+      font-size: 2rem;
+    }
   }
 }
 

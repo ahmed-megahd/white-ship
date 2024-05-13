@@ -908,6 +908,7 @@ input[type=number] {
 @media screen and (max-width: 479px) {
   .section-heading {
     height: 70vh;
+    margin-bottom: 2rem;
   }
 }
 .section-heading .icon-container {
@@ -1015,6 +1016,7 @@ input[type=number] {
   .section-location_right {
     height: auto;
     padding: 4rem 4rem;
+    margin-bottom: 2rem;
   }
 }
 

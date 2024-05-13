@@ -19,6 +19,7 @@
 
   @media screen and (max-width: $small-bp) {
     height: 70vh;
+    margin-bottom: 2rem;
   }
 
   .icon-container {
@@ -95,6 +96,7 @@
     @media screen and (max-width: $large-bp) {
       height: auto;
       padding: 4rem 4rem;
+      margin-bottom: 2rem;
     }
   }
 }

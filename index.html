@@ -85,63 +85,167 @@
   <body>
     <aside id="section-aside" class="section-aside">
       <div id="section-aside-close" class="section-aside_close">
-        <span></span>
-        <span></span>
+        <i class="fa-solid fa-xmark"></i>
       </div>
-      <div class="sidebar">
-        <div class="sidebar_news">
-          <h4 class="sidebar_news_header">Top Posts</h4>
-          <div class="card">
-            <img src="imgs/posts-img-1.jpg" alt="" />
-            <div class="card_content">
-              <h2 class="card_heading">New service on the way</h2>
-              <p class="card_text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt exercitationem iste, vrrupti ipsa asperiores harum?
-                Dicta odio aut hic.
-              </p>
-              <a href="#" class="card_btn">
-                Read More
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
+
+      <div class="section-aside_logo">
+        <a href="index.html">
+          <img src="imgs/logo.jpg" alt="logo" class="section-aside_img" />
+        </a>
+      </div>
+
+      <div class="navigation">
+        <nav class="mobile-menu">
+          <ul>
+            <li class="mobile-menu_item">
+              <a href="index.html" class="mobile-menu_link">Home</a>
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="#" class="mobile-menu_link">About us</a>
+
+              <div id="dropdown-btn--about" class="dropdown-btn">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <ul id="sub-menu-about" class="mobile-menu_sub">
+                <li>
+                  <a href="about us/index.html">company</a>
+                </li>
+
+                <li>
+                  <a href="about us/index.html">FAQ</a>
+                </li>
+
+                <li>
+                  <a href="about us/index.html">Team</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="#" class="mobile-menu_link">services</a>
+
+              <div id="dropdown-btn--services" class="dropdown-btn">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <ul id="sub-menu-services" class="mobile-menu_sub">
+                <li>
+                  <a href="services/provision/index.html">provision store</a>
+                </li>
+
+                <li>
+                  <a href="services/bonded/index.html">bonded store </a>
+                </li>
+
+                <li>
+                  <a href="services/cabin/index.html">Cabin store</a>
+                </li>
+
+                <li>
+                  <a href="services/offshore catering/index.html"
+                    >offshore catering</a
+                  >
+                </li>
+
+                <li>
+                  <a href="services/deck & engine/index.html"
+                    >deck & engine consumables</a
+                  >
+                </li>
+
+                <li>
+                  <a href="services/gas & chemicals/index.html"
+                    >gas & chemicals</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="news/index.html" class="mobile-menu_link"
+                >news & events</a
+              >
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="#" class="mobile-menu_link">career</a>
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="contact/index.html" class="mobile-menu_link"
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="section-aside_contact">
+        <div class="section-aside_contact-wrapper">
+          <div class="section-aside_contact_icon-container">
+            <i class="fa-solid fa-envelope"></i>
           </div>
 
-          <div class="card">
-            <img src="imgs/posts-img-2.jpg" alt="" />
-            <div class="card_content">
-              <h2 class="card_heading">Egypt to set new rules</h2>
-              <p class="card_text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Nesciunt exercitationem iste, vrrupti ipsa asperiores harum?
-                Dicta odio aut hic.
-              </p>
-              <a href="#" class="card_btn">
-                Read More
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </div>
-          </div>
+          <p class="section-aside_contact-info">A.emadselsayed@gmail.com</p>
         </div>
-        <!-- <div class="sidebar_follow">
 
-        </div> -->
-        <div class="sidebar_join">
-          <h5 class="sidebar_join_header">Join Newsletter</h5>
-          <form action="#" class="form">
-            <input
-              type="email"
-              name="email"
-              class="form_input"
-              placeholder="Enter Your Email"
-            />
-            <button class="btn btn_submit">Subscribe</button>
-          </form>
+        <div class="section-aside_contact-wrapper">
+          <div class="section-aside_contact_icon-container">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <p class="section-aside_contact-info">+201091310677</p>
         </div>
+      </div>
+
+      <div class="section-aside_socials">
+        <ul class="section-aside_socials-wrapper">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </aside>
     <!-- header section -->
     <header class="header">
+      <div class="header_mobile">
+        <div class="header_container">
+          <div class="header_navbar">
+            <div class="header_logo_wrapper">
+              <a href="index.html" class="header_img">
+                <img
+                  src="imgs/logo-removebg-preview.png"
+                  alt="white-ship logo"
+                />
+              </a>
+            </div>
+
+            <div id="header-cta-toggle" class="header_cta">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="header_top-bar">
         <div class="header_container">
           <div class="header_navbar">

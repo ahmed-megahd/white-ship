@@ -2,18 +2,35 @@ const sectionAside = document.getElementById("section-aside");
 const headerCtaToggle = document.getElementById("header-cta-toggle");
 const headerCtaClose = document.getElementById("section-aside-close");
 const overlay = document.createElement("div");
+
+const aboutSubBtn = document.getElementById("dropdown-btn--about");
+const aboutSub = document.getElementById("sub-menu-about");
+
+const servicesSubBtn = document.getElementById("dropdown-btn--services");
+const servicesSub = document.getElementById("sub-menu-services");
+
 overlay.classList.add("overlay");
 document.body.appendChild(overlay);
 
-// headerCtaToggle.addEventListener("click", () => {
-//   sectionAside.classList.add("active");
-//   overlay.style.display = "block";
-// });
+aboutSubBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  aboutSub.classList.toggle("mobile-menu_sub-active");
+});
 
-// headerCtaClose.addEventListener("click", () => {
-//   sectionAside.classList.remove("active");
-//   overlay.style.display = "none";
-// });
+servicesSubBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  servicesSub.classList.toggle("mobile-menu_sub-active");
+});
+
+headerCtaToggle.addEventListener("click", () => {
+  sectionAside.classList.add("section-aside-open");
+});
+
+headerCtaClose.addEventListener("click", () => {
+  // sectionAside.classList.toggle("section-aside-close");
+  sectionAside.classList.remove("section-aside-open");
+  // overlay.style.display = "none";
+});
 
 //Slider Functionality Start
 let slideIndex = 1;

@@ -46,6 +46,7 @@
 
   @media screen and (max-width: $large-bp) {
     flex-direction: column;
+    padding: 6rem 1rem;
   }
 
   &_left {
