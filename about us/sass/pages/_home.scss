@@ -8,7 +8,18 @@
   align-items: center;
   padding: 8rem 4rem;
   padding-top: 12rem;
-  //   margin-top: 2rem;
+
+  @media screen and (max-width: $extra-large-bp) {
+    height: 45vh;
+  }
+
+  // @media screen and (max-width: $large-bp) {
+  //   height: 60vh;
+  // }
+
+  @media screen and (max-width: $small-bp) {
+    height: 70vh;
+  }
 
   .icon-container {
     width: 80%;
@@ -38,9 +49,23 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: $extra-large-bp) {
+    flex-direction: column;
+    height: 85vh;
+  }
+
+  @media screen and (max-width: $large-bp) {
+    height: 100vh;
+  }
+
   &_left {
     width: 50%;
     height: 100%;
+
+    @media screen and (max-width: $extra-large-bp) {
+      width: 100%;
+      height: 60%;
+    }
 
     img {
       display: inline-block;
@@ -53,13 +78,24 @@
 
   &_right {
     width: 50%;
-    height: 100%;
+    // height: 100%;+
     padding: 6rem 10rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     background-color: #f5f7f9;
+
+    @media screen and (max-width: $extra-large-bp) {
+      width: 100%;
+      height: 40%;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: $large-bp) {
+      height: auto;
+      padding: 4rem 4rem;
+    }
   }
 }
 
@@ -69,6 +105,15 @@
 
   &_right {
     background-color: $color-white;
+  }
+
+  @media screen and (max-width: $medium-bp) {
+    padding: 4rem;
+  }
+
+  @media screen and (max-width: $small-bp) {
+    padding: 0;
+    text-align: center;
   }
 }
 
@@ -84,6 +129,11 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 4rem;
+
+    @media screen and (max-width: $small-bp) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &_bottom {
@@ -92,6 +142,10 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @media screen and (max-width: $medium-bp) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -113,6 +167,15 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  @media screen and (max-width: $extra-large-bp) {
+    height: 50vh;
+  }
+
+  @media screen and (max-width: $small-bp) {
+    height: 80vh;
+    padding: 2rem;
+  }
 }
 
 .section-responsibility {
@@ -139,6 +202,10 @@
       // border: 1px solid rgba($color-primary, 0.8);
       // box-shadow: 0px 8px 12px rgba($color: #eee, $alpha: 1);
       background-color: $color-white;
+
+      @media screen and (max-width: $medium-bp) {
+        width: 100%;
+      }
     }
   }
 

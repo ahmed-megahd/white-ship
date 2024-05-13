@@ -747,7 +747,7 @@ input[type=number] {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-70%, -60%);
+  transform: translate(-70%, -40%);
   text-align: left;
   color: #fff;
 }
@@ -1376,7 +1376,7 @@ input[type=number] {
   position: relative;
   background-color: #ffffff;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .header {
     display: none;
   }

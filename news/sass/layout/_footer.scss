@@ -21,6 +21,11 @@
     padding: 5rem 3rem;
     border-bottom: 1px solid $color-white;
 
+    @media screen and (max-width: $large-bp) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     &_left {
       width: 30%;
       height: 100%;
@@ -29,6 +34,10 @@
       justify-content: center;
       //   background-color: $color-white-bg;
       //   border: 1px solid $color-primary;
+
+      @media screen and (max-width: $large-bp) {
+        width: 50%;
+      }
     }
 
     &_right {
@@ -38,6 +47,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @media screen and (max-width: $large-bp) {
+        width: 90%;
+      }
+
+      @media screen and (max-width: $small-bp) {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+      }
     }
   }
   &_logo {
@@ -70,6 +89,15 @@
     justify-content: center;
     width: 60%;
 
+    @media screen and (max-width: $large-bp) {
+      width: 75%;
+    }
+
+    @media screen and (max-width: $small-bp) {
+      width: 100%;
+      margin-top: 2rem;
+    }
+
     .form_input {
       margin-bottom: 0;
       border: none;
@@ -87,6 +115,7 @@
     height: 5rem;
     text-align: center;
     text-decoration: none;
+
     i {
       font-size: 1.6rem;
       color: $color-white;
@@ -99,6 +128,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     color: $color-white;
 
     .icon-container {
@@ -131,9 +161,15 @@
 
   &_about {
     width: 25%;
-  }
 
-  &_item {
+    @media screen and (max-width: $large-bp) {
+      width: 35%;
+    }
+
+    @media screen and (max-width: $small-bp) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
   }
 
   &_title {
@@ -141,16 +177,33 @@
     font-weight: 700;
     font-family: $headers-font;
     margin-bottom: 1.4rem;
+
+    @media screen and (max-width: $small-bp) {
+      font-size: 2.8rem;
+    }
   }
 
   &_details {
     font-size: 1.6rem;
     font-family: $main-font;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: $small-bp) {
+      font-size: 1.8rem;
+    }
   }
 
   &_item {
     width: 20%;
+
+    @media screen and (max-width: $large-bp) {
+      width: 33%;
+    }
+
+    @media screen and (max-width: $small-bp) {
+      margin-bottom: 2rem;
+      width: 100%;
+    }
   }
 
   &_nav {
@@ -162,6 +215,10 @@
         text-decoration: none;
         color: $color-white;
         font-size: 1.6rem;
+
+        @media screen and (max-width: $small-bp) {
+          font-size: 1.8rem;
+        }
       }
 
       a:hover {
@@ -172,6 +229,14 @@
 
   &_contact {
     width: 25%;
+
+    @media screen and (max-width: $large-bp) {
+      width: 33%;
+    }
+
+    @media screen and (max-width: $small-bp) {
+      width: 100%;
+    }
   }
 
   &_contact-container {

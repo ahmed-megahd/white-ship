@@ -4,6 +4,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @media screen and (max-width: $large-bp) {
+    flex-direction: column;
+  }
+
   &--cta {
     margin-top: 6rem;
   }
@@ -11,6 +15,10 @@
   &_group {
     width: 48%;
     position: relative;
+
+    @media screen and (max-width: $large-bp) {
+      width: 100%;
+    }
 
     &--1 {
       width: 100%;

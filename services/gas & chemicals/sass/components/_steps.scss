@@ -15,6 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: $small-bp) {
+      flex-direction: column;
+    }
   }
 
   &_left {
@@ -33,6 +37,14 @@
     width: 75%;
     padding-left: 4rem;
     border-left: 2px solid rgba($color: $color-secondary, $alpha: 0.4);
+
+    @media screen and (max-width: $small-bp) {
+      width: 100%;
+      padding-left: 0;
+      border-left: none;
+      padding-top: 2rem;
+      border-top: 2px solid rgba($color: $color-secondary, $alpha: 0.4);
+    }
   }
 
   &_name {
@@ -42,10 +54,18 @@
     text-transform: uppercase;
     color: $color-primary;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: $small-bp) {
+      text-align: center;
+    }
   }
 
   &_desc {
     font-size: 1.6rem;
     color: rgba($color: $color-secondary, $alpha: 0.7);
+
+    @media screen and (max-width: $small-bp) {
+      font-size: 1.8rem;
+    }
   }
 }

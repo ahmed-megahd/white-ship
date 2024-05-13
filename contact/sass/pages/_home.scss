@@ -10,6 +10,14 @@
   padding-top: 12rem;
   //   margin-top: 2rem;
 
+  @media screen and (max-width: $extra-large-bp) {
+    height: 45vh;
+  }
+
+  @media screen and (max-width: $small-bp) {
+    height: 70vh;
+  }
+
   .icon-container {
     width: 80%;
 
@@ -36,9 +44,17 @@
   width: 100%;
   background-color: $color-white;
 
+  @media screen and (max-width: $large-bp) {
+    flex-direction: column;
+  }
+
   &_left {
     width: 40%;
     // padding: 1rem;
+
+    @media screen and (max-width: $large-bp) {
+      width: 100%;
+    }
 
     &_top {
       color: $color-secondary;
@@ -58,6 +74,10 @@
   &_right {
     width: 52%;
     padding: 2rem 1rem;
+
+    @media screen and (max-width: $large-bp) {
+      width: 100%;
+    }
     // padding-top: 4rem;
   }
 }

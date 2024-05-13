@@ -13,6 +13,10 @@
     padding: 0.5rem 1rem;
     // border-radius: 0.5rem;
   }
+
+  @media screen and (max-width: $small-bp) {
+    text-align: center;
+  }
   // text-transform: uppercase;
 }
 
@@ -82,9 +86,17 @@
   color: rgba($color: $color-secondary, $alpha: 0.7);
   margin-bottom: 2rem;
 
+  @media screen and (max-width: $large-bp) {
+    font-size: 1.8rem;
+  }
+
   &--center {
     text-align: center;
     width: 70%;
+
+    @media screen and (max-width: $large-bp) {
+      width: 100%;
+    }
   }
 
   span {

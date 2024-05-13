@@ -4,6 +4,14 @@
   background-color: $color-white;
   margin-bottom: 4rem;
 
+  @media screen and (max-width: $extra-large-bp) {
+    width: 45%;
+  }
+
+  @media screen and (max-width: $medium-bp) {
+    width: 100%;
+  }
+
   .icon-wrapper {
     width: 4rem;
     height: 4rem;

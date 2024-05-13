@@ -6,7 +6,11 @@
   // color: $color-primary;
   font-family: $headers-font;
   font-weight: 900;
-  animation: slideRight2 2s;
+  // animation: slideRight2 2s;
+
+  @media screen and (max-width: $small-bp) {
+    text-align: center;
+  }
 
   span {
     background-color: $color-primary;
@@ -82,9 +86,17 @@
   color: rgba($color: $color-secondary, $alpha: 0.7);
   margin-bottom: 2rem;
 
+  @media screen and (max-width: $large-bp) {
+    font-size: 1.8rem;
+  }
+
   &--center {
     text-align: center;
     width: 70%;
+
+    @media screen and (max-width: $large-bp) {
+      width: 100%;
+    }
   }
 
   span {
