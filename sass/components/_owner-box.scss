@@ -3,6 +3,12 @@
   align-items: center;
   margin-right: auto;
   margin-left: 3rem;
+
+  @media screen and (max-width: $medium-bp) {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 4rem;
+  }
 }
 
 .img-box {

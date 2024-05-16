@@ -167,6 +167,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 770px) {
+  .middle-container {
+    flex-direction: column;
+  }
+}
 .middle-container--1 {
   width: 90%;
 }
@@ -298,6 +303,11 @@ body {
   border: 0;
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 770px) {
+  .btn {
+    width: 100%;
+  }
 }
 .btn::before {
   content: "";
@@ -678,6 +688,13 @@ input[type=number] {
   margin-right: auto;
   margin-left: 3rem;
 }
+@media screen and (max-width: 770px) {
+  .owner-box {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+}
 
 .img-box {
   display: flex;
@@ -781,6 +798,7 @@ input[type=number] {
 /* Slideshow container */
 .slideshow-container {
   width: 100%;
+  height: 100%;
   position: relative;
 }
 .slideshow-container--1 {
@@ -794,7 +812,6 @@ input[type=number] {
 .slideshow-slide {
   display: none;
   height: 100%;
-  height: 100vh;
   width: 100%;
 }
 .slideshow-slide_desc {
@@ -1082,7 +1099,7 @@ input[type=number] {
   transform: translateY(-74%);
   z-index: 0;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .dotted-line::after {
     display: none;
   }
@@ -1227,6 +1244,7 @@ input[type=number] {
 @media screen and (max-width: 991px) {
   .footer_top_right {
     width: 90%;
+    padding: 0;
   }
 }
 @media screen and (max-width: 479px) {
@@ -1688,12 +1706,17 @@ input[type=number] {
 }
 .header_cta {
   margin-right: 2rem;
-  margin-top: 1rem;
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  .header_cta {
+    margin-top: 1rem;
+  }
+}
 .header_cta i {
   font-size: 2rem;
+  color: #174e9a;
 }
 
 .sidebar {
@@ -1763,6 +1786,7 @@ input[type=number] {
   align-items: center;
   cursor: pointer;
   font-size: 2.4rem;
+  color: #174e9a;
 }
 .section-aside .navigation {
   width: 100%;
@@ -1843,6 +1867,7 @@ input[type=number] {
 
 .section-main {
   width: 100%;
+  height: 85rem;
   position: relative;
   margin-bottom: 4rem;
 }
@@ -1862,7 +1887,7 @@ input[type=number] {
 .section-certificates {
   width: 100%;
   padding: 8rem 4rem;
-  margin-top: -12rem;
+  margin-top: -4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2171,7 +2196,7 @@ input[type=number] {
   width: 60%;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
   .section-steps_bottom {
     width: 100%;
     flex-direction: column;

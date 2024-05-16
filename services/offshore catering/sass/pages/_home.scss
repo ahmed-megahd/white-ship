@@ -1,3 +1,125 @@
+.section-aside {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  backface-visibility: hidden;
+  background-color: $color-white;
+  z-index: 9999;
+  transition: all 0.3s;
+
+  &_img {
+    width: 20rem;
+    // overflow: hidden;
+    transform: scale(1.6);
+  }
+
+  &_close {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2.4rem;
+    color: $color-primary;
+  }
+
+  .navigation {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  &_contact {
+    width: 100%;
+    padding: 2rem;
+    // margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $large-bp) {
+      flex-direction: column;
+    }
+
+    &-wrapper {
+      width: 32%;
+      margin: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: $large-bp) {
+        width: 80%;
+      }
+    }
+
+    &_icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
+      background-color: $color-primary;
+
+      i {
+        font-size: 2rem;
+        color: $color-white;
+      }
+    }
+
+    &-info {
+      font-size: 1.8rem;
+      color: $color-secondary;
+      font-weight: 700;
+    }
+  }
+
+  &_socials {
+    width: 100%;
+    padding: 2rem 4rem;
+    // margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          width: 6rem;
+          height: 6rem;
+          background-color: $color-white;
+          border: 1px solid $color-primary;
+
+          i {
+            font-size: 2.4rem;
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-aside-open {
+  right: 0;
+}
+
 .section-heading {
   width: 100%;
   height: 70vh;
@@ -36,6 +158,10 @@
     justify-content: center;
   }
 
+  @media screen and (max-width: $small-bp) {
+    padding: 8rem 2rem;
+  }
+
   &_sidebar {
     width: 20%;
     height: 100%;
@@ -61,6 +187,8 @@
 
       @media screen and (max-width: $medium-bp) {
         height: 40vh;
+
+        object-fit: cover;
       }
     }
 

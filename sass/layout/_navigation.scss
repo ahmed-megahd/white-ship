@@ -323,12 +323,16 @@
 
   &_cta {
     margin-right: 2rem;
-    margin-top: 1rem;
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: $extra-large-bp) {
+      margin-top: 1rem;
+    }
+
     i {
       font-size: 2rem;
+      color: $color-primary;
     }
   }
 }

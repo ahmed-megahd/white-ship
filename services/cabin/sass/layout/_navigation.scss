@@ -1,17 +1,21 @@
 .header {
   position: relative;
   background-color: #ffffff;
-  // box-shadow: 0px 4rem 0.05rem rgba($color: #000000, $alpha: 0.3);
-
-  @media screen and (max-width: $large-bp) {
-    display: none;
-  }
 
   &_container {
     width: 100%;
     padding: 0 2rem;
-    // margin-left: auto;
-    // margin-right: auto;
+
+    @media screen and (max-width: $medium-bp) {
+      padding: 0;
+    }
+  }
+
+  &_mobile {
+    display: none;
+    @media screen and (max-width: $extra-large-bp) {
+      display: block;
+    }
   }
 
   &_navbar {
@@ -32,6 +36,10 @@
     width: 100%;
     height: 4rem;
     background-color: $color-secondary;
+
+    @media screen and (max-width: $extra-large-bp) {
+      display: none;
+    }
 
     &_left {
       align-self: flex-start;
@@ -76,6 +84,10 @@
   &_top,
   &_bottom {
     display: flex;
+
+    @media screen and (max-width: $extra-large-bp) {
+      display: none;
+    }
   }
 
   &_top {
@@ -151,9 +163,6 @@
         margin-left: 1.5rem;
         font-size: 1.3rem;
         line-height: 1.3;
-      }
-
-      &-main {
       }
 
       &-sec {
@@ -304,61 +313,17 @@
   }
 
   &_cta {
-    margin-right: 4rem;
-    padding-left: 2rem;
+    margin-right: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-left: 2px solid rgba($color: #eee, $alpha: 0.3);
-  }
-}
 
-.sidebar {
-  padding: 4rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    @media screen and (max-width: $extra-large-bp) {
+      margin-top: 1rem;
+    }
 
-  &_news,
-  &_join {
-    width: 100%;
-    padding: 3rem;
-    border-radius: 6px;
-    background-color: $color-white;
-    padding-bottom: 1.5rem;
-    margin-bottom: 4rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &_header {
-      align-self: self-start;
-      // padding-left: 1rem;
-      font-size: 2.2rem;
-      margin-bottom: 3rem;
+    i {
+      font-size: 2rem;
+      color: $color-primary;
     }
   }
-
-  &_news {
-    margin-top: 2rem;
-  }
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); // Adjust opacity for the desired brightness (e.g., 0.5 for 50%)
-  z-index: 888;
-  display: none;
-  transition: all 0.3s;
 }

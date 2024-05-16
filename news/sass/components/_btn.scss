@@ -14,7 +14,10 @@
   border: 0;
   position: relative;
   z-index: 1;
-  // border-radius: 0.6rem;
+
+  @media screen and (max-width: $small-bp) {
+    width: 100%;
+  }
 
   &::before {
     content: "";
@@ -31,16 +34,6 @@
     transition: 0.3s;
   }
 
-  // &--value {
-  //   color: $color-secondary;
-  //   background-color: $color-white-bg;
-  //   font-style: italic;
-
-  //   &:hover {
-  //     color: $color-white;
-  //   }
-  // }
-
   &:hover {
     &::before {
       width: 90%;
@@ -49,25 +42,19 @@
     }
   }
 
-  &_submit {
-    width: 100%;
-    z-index: 1000;
+  // &_submit {
+  //   width: 100%;
+  //   z-index: 1000;
 
-    &::before {
-      background-color: $color-primary !important;
-    }
+  //   &::before {
+  //     background-color: $color-primary !important;
+  //   }
 
-    &:hover {
-      color: $color-white;
-      z-index: 999;
-    }
-  }
-
-  &-1 {
-    width: 45%;
-    font-size: $default-font-size;
-    animation: slideRight2 2s;
-  }
+  //   &:hover {
+  //     color: $color-white;
+  //     z-index: 999;
+  //   }
+  // }
 
   &--2 {
     background-color: $color-secondary;
@@ -80,23 +67,23 @@
     }
   }
 
-  &-service {
-    // display: none;
-    width: 100%;
-    padding: 1rem 2rem;
-    background-color: inherit;
-    border: 1px solid $color-secondary;
-    color: $color-secondary;
-    letter-spacing: 1px;
+  // &-service {
+  //   // display: none;
+  //   width: 100%;
+  //   padding: 1rem 2rem;
+  //   background-color: inherit;
+  //   border: 1px solid $color-secondary;
+  //   color: $color-secondary;
+  //   letter-spacing: 1px;
 
-    &:hover {
-      color: $color-white;
-    }
+  //   &:hover {
+  //     color: $color-white;
+  //   }
 
-    &:hover::before {
-      background-color: $color-secondary;
-    }
-  }
+  //   &:hover::before {
+  //     background-color: $color-secondary;
+  //   }
+  // }
 }
 
 .btn-container {
@@ -106,9 +93,9 @@
     text-align: right;
   }
 
-  &-service {
-    margin-top: 1rem;
-    width: 100%;
-    text-align: center;
-  }
+  // &-service {
+  //   margin-top: 1rem;
+  //   width: 100%;
+  //   text-align: center;
+  // }
 }

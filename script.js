@@ -50,7 +50,7 @@ function currentSlide(n) {
 // Automatic slide change every 2 seconds
 setInterval(function () {
   plusSlides(1); // Move to the next slide every 2 seconds
-}, 3000);
+}, 4000);
 
 function showSlides(n, slideClassName, dotClassName) {
   let i;
