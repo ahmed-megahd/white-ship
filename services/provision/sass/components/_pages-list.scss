@@ -1,7 +1,7 @@
 .pages-list {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   list-style: none;
 
   @media screen and (max-width: $small-bp) {

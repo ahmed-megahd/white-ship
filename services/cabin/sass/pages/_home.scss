@@ -122,11 +122,11 @@
 
 .section-heading {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-secondary, 0.8) 40%,
-      rgba($color-primary, 0.7) 70%
+      rgba($color-secondary, 0.9) 70%
     ),
     url(../imgs/img-1.jpg);
   background-position: center;
@@ -134,15 +134,10 @@
   background-repeat: no-repeat;
   color: $color-white;
   padding: 8rem 4rem;
-  padding-left: 10rem;
+  // padding-left: 10rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-
-  @media screen and (max-width: $medium-bp) {
-    padding-left: 2rem;
-    justify-content: center;
-  }
+  justify-content: center;
 }
 
 .section-main {
