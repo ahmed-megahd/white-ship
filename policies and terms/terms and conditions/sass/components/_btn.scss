@@ -1,0 +1,80 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-primary;
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: $headers-font;
+  text-decoration: none;
+  overflow: hidden;
+  border: 0;
+  position: relative;
+  z-index: 1;
+  // border-radius: 0.6rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 100%;
+    background-color: $color-secondary;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: 0.3s;
+  }
+
+  // &--value {
+  //   color: $color-secondary;
+  //   background-color: $color-white-bg;
+  //   font-style: italic;
+
+  //   &:hover {
+  //     color: $color-white;
+  //   }
+  // }
+
+  &:hover {
+    &::before {
+      width: 90%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &_submit {
+    width: 100%;
+  }
+
+  &--2 {
+    background-color: $color-secondary;
+
+    &:hover {
+      // color: $color-secondary;
+      &::before {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+
+.btn-container {
+  width: 100%;
+
+  &-1 {
+    text-align: right;
+  }
+
+  &-service {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+}

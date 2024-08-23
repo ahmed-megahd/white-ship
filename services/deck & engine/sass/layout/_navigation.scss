@@ -4,7 +4,6 @@
 
   &_container {
     width: 100%;
-    padding: 0 2rem;
 
     @media screen and (max-width: $medium-bp) {
       padding: 0;
@@ -30,54 +29,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  &_top-bar {
-    width: 100%;
-    height: 4rem;
-    background-color: $color-secondary;
-
-    @media screen and (max-width: $extra-large-bp) {
-      display: none;
-    }
-
-    &_left {
-      align-self: flex-start;
-    }
-
-    &_right {
-      width: 10%;
-      margin-right: 6rem;
-      .icon-container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      i {
-        // width: 3.6rem;
-        // height: 3.6rem;
-        font-size: 1.6rem;
-        color: $color-white;
-
-        &:hover {
-          color: $color-primary;
-        }
-      }
-    }
+    margin-left: 2rem;
   }
 
   &_img {
-    max-width: 20rem;
+    max-width: 18rem;
     // overflow: hidden;
     img {
       display: inline-block;
       transform: scale(1.6);
       z-index: 11111;
       width: 100%;
-      //   height: 70%;
-      vertical-align: middle;
     }
   }
 
@@ -91,32 +53,24 @@
   }
 
   &_top {
-    // padding: 2rem 0;
-    // background-color: rgba($color: #111, $alpha: 0.3);
-    // background-image: linear-gradient(
-    //   to left bottom,
-    //   $color-primary 0%,
-    //   $color-primary 60%,
-    //   $color-white 60%
-    // );
-    // background-position: right;
+    background-color: #f5f5f5;
+    padding: 0 4rem;
   }
 
   &_bottom {
-    z-index: 1000;
-    background-color: $color-primary;
-    // padding-top: 2rem;
+    background-color: $color-secondary;
+    padding: 0 12rem;
   }
 
   &_controls {
-    padding-right: 2rem;
+    // padding-right: 2rem;
     &_nav {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       list-style: none;
       padding: 0 1rem;
-      padding-right: 2rem;
+      // padding-right: 2rem;
       font-family: $headers-font;
 
       &-item {
@@ -135,9 +89,10 @@
         align-items: center;
         justify-content: center;
         margin-left: 2rem;
+        font-size: 1.4rem;
 
         i {
-          font-size: 2.8rem;
+          font-size: 3rem;
           color: $color-primary;
           // font-weight: 400;
           width: 3.6rem;
@@ -165,21 +120,21 @@
         line-height: 1.3;
       }
 
-      &-sec {
-        color: $color-secondary;
+      &-main {
         font-size: 1.4rem;
-        line-height: 1.3rem;
-        font-weight: 600;
-        z-index: 1000000;
-        // font-weight: 500;
 
-        &--1 {
-          font-size: 1.3rem;
+        &--white {
           color: $color-white;
         }
+      }
 
-        &:hover {
-          color: $color-primary;
+      &-sec {
+        color: $color-primary;
+        font-weight: 700;
+        border-bottom: 1px solid transparent;
+
+        &--1 {
+          color: $color-white;
         }
       }
     }
@@ -187,7 +142,7 @@
 
   &_nav {
     z-index: 100;
-    padding-left: 0.5rem;
+    padding-left: 1rem;
     &-list {
       display: flex;
       flex-direction: row;
@@ -204,10 +159,10 @@
         list-style: none;
         min-width: 25rem;
         position: absolute;
-        top: 90%;
+        top: 100%;
         // left: 20%;
         background-color: $color-white;
-        border-bottom: 2px solid $color-primary;
+        background-color: $color-secondary;
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s;
@@ -216,14 +171,13 @@
             display: flex;
             align-items: center;
             justify-self: center;
-            color: $color-secondary;
-            font-size: 1.4rem;
-            font-weight: 400;
-            font-family: $headers-font;
-            text-transform: uppercase;
+            color: $color-white;
+            font-size: 1.5rem;
+            font-family: $main-font;
+            text-transform: capitalize;
             text-decoration: none;
             padding: 1.5rem;
-            border-bottom: 1px solid rgba($color: #111, $alpha: 0.3);
+            border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
             position: relative;
             z-index: 100;
             overflow: hidden;
@@ -235,14 +189,14 @@
               left: 0;
               width: 5px;
               height: 100%;
-              background-color: $color-primary;
+              background-color: $color-white;
               opacity: 0;
               visibility: hidden;
               transition: all 0.3s;
             }
 
             &:hover {
-              color: $color-white;
+              color: $color-secondary;
 
               &::before {
                 opacity: 1;
@@ -255,9 +209,6 @@
         }
       }
 
-      // &:not(:last-child) {
-      //   border-right: 1px solid $color-white;
-      // }
       &:hover {
         .header_nav-item_sub-menu {
           opacity: 1;
@@ -269,15 +220,15 @@
     &-link {
       position: relative;
       display: inline-block;
-      padding: 1rem 2.5rem;
-      text-transform: uppercase;
+      padding: 1rem 2rem;
+      text-transform: capitalize;
       text-align: center;
       color: $color-white;
       font-weight: 600;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       text-decoration: none;
       transition: all 0.2s;
-      font-family: $headers-font;
+      font-family: $main-font;
       display: flex;
       align-items: center;
 
@@ -303,6 +254,7 @@
       }
 
       &:hover {
+        // color: $accent-purple;
         &::before {
           width: 75%;
           opacity: 1;
@@ -324,6 +276,17 @@
     i {
       font-size: 2rem;
       color: $color-primary;
+    }
+
+    .btn.btn--2 {
+      background-color: $color-primary;
+      color: $color-white;
+      padding: 1rem 2rem;
+      // @include hover-transition;
+
+      &:hover {
+        background-color: $color-primary;
+      }
     }
   }
 }

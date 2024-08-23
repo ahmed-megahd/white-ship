@@ -32,11 +32,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      //   background-color: $color-white-bg;
-      //   border: 1px solid $color-primary;
+      margin-left: -7rem;
+
+      @media screen and (max-width: $extra-large-bp) {
+        margin-left: -5rem;
+      }
 
       @media screen and (max-width: $large-bp) {
         width: 50%;
+        margin-left: -9rem;
+      }
+
+      @media screen and (max-width: $small-bp) {
+        margin-left: -3rem;
       }
     }
 
@@ -155,7 +163,7 @@
       }
 
       &:hover {
-        background-color: $color-secondary;
+        background-color: $color-primary;
       }
     }
   }

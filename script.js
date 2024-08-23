@@ -3,23 +3,31 @@ const headerCtaToggle = document.getElementById("header-cta-toggle");
 const headerCtaClose = document.getElementById("section-aside-close");
 const overlay = document.createElement("div");
 
-const aboutSubBtn = document.getElementById("dropdown-btn--about");
-const aboutSub = document.getElementById("sub-menu-about");
+// const aboutSubBtn = document.getElementById("dropdown-btn--about");
+// const aboutSub = document.getElementById("sub-menu-about");
 
 const servicesSubBtn = document.getElementById("dropdown-btn--services");
 const servicesSub = document.getElementById("sub-menu-services");
 
+const termsSubBtn = document.getElementById("dropdown-btn--terms");
+const termsSub = document.getElementById("sub-menu-terms");
+
 overlay.classList.add("overlay");
 document.body.appendChild(overlay);
 
-aboutSubBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  aboutSub.classList.toggle("mobile-menu_sub-active");
-});
+// aboutSubBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   aboutSub.classList.toggle("mobile-menu_sub-active");
+// });
 
 servicesSubBtn.addEventListener("click", (e) => {
   e.preventDefault();
   servicesSub.classList.toggle("mobile-menu_sub-active");
+});
+
+termsSubBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  termsSub.classList.toggle("mobile-menu_sub-active");
 });
 
 headerCtaToggle.addEventListener("click", () => {

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>white-ship</title>
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="icon" href="imgs/logo.jpg" />
+  </head>
+  <body>
+    <aside id="section-aside" class="section-aside">
+      <div id="section-aside-close" class="section-aside_close">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <div class="section-aside_logo">
+        <a href="../../index.html">
+          <img src="imgs/logo.jpg" alt="logo" class="section-aside_img" />
+        </a>
+      </div>
+
+      <div class="navigation">
+        <nav class="mobile-menu">
+          <ul>
+            <li class="mobile-menu_item">
+              <a href="../../index.html" class="mobile-menu_link">Home</a>
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="../../about us/index.html" class="mobile-menu_link"
+                >About us</a
+              >
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="#" class="mobile-menu_link">services</a>
+
+              <div id="dropdown-btn--services" class="dropdown-btn">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <ul id="sub-menu-services" class="mobile-menu_sub">
+                <li>
+                  <a href="../../services/provision/index.html"
+                    >provision store</a
+                  >
+                </li>
+
+                <li>
+                  <a href="../../services/bonded/index.html">bonded store </a>
+                </li>
+
+                <li>
+                  <a href="../../services/cabin/index.html">Cabin store</a>
+                </li>
+
+                <li>
+                  <a href="../../services/offshore catering/index.html"
+                    >offshore catering</a
+                  >
+                </li>
+
+                <li>
+                  <a href="../../services/deck & engine/index.html"
+                    >deck & engine consumables</a
+                  >
+                </li>
+
+                <li>
+                  <a href="../../services/gas & chemicals/index.html"
+                    >gas & chemicals</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="#" class="mobile-menu_link">Terms & Policies</a>
+
+              <div id="dropdown-btn--terms" class="dropdown-btn">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+
+              <ul id="sub-menu-terms" class="mobile-menu_sub">
+                <li>
+                  <a href="../terms and conditions/index.html"
+                    >Terms & Conditions</a
+                  >
+                </li>
+
+                <li>
+                  <a href="../responsibility/index.html"
+                    >Social Responsibility</a
+                  >
+                </li>
+
+                <li>
+                  <a href="#">Quality Policy</a>
+                </li>
+                <li>
+                  <a href="../slavery policy/index.html"
+                    >Modern Slavery Policy</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="../../news/index.html" class="mobile-menu_link"
+                >news & events</a
+              >
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="../../careers/index.html" class="mobile-menu_link"
+                >career</a
+              >
+            </li>
+
+            <li class="mobile-menu_item">
+              <a href="../../contact/index.html" class="mobile-menu_link"
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="section-aside_contact">
+        <div class="section-aside_contact-wrapper">
+          <div class="section-aside_contact_icon-container">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+
+          <p class="section-aside_contact-info">A.emadselsayed@gmail.com</p>
+        </div>
+
+        <div class="section-aside_contact-wrapper">
+          <div class="section-aside_contact_icon-container">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+
+          <p class="section-aside_contact-info">+201091310677</p>
+        </div>
+      </div>
+
+      <div class="section-aside_socials">
+        <ul class="section-aside_socials-wrapper">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <header class="header">
+      <div class="header_mobile">
+        <div class="header_container">
+          <div class="header_navbar">
+            <div class="header_logo_wrapper">
+              <a href="../../index.html" class="header_img">
+                <img
+                  src="imgs/logo-removebg-preview.png"
+                  alt="white-ship logo"
+                />
+              </a>
+            </div>
+
+            <div id="header-cta-toggle" class="header_cta">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header_top">
+        <div class="header_container">
+          <div class="header_navbar">
+            <div class="header_logo_wrapper">
+              <a href="../../index.html" class="header_img">
+                <img
+                  src="imgs/logo-removebg-preview.png"
+                  alt="white-ship logo"
+                />
+              </a>
+            </div>
+            <div class="header_controls">
+              <ul class="header_controls_nav">
+                <li class="header_controls_nav-item rm-2">
+                  <a class="header_controls_nav-link" href="#">
+                    <i class="fa-regular fa-clock"></i>
+                    <div class="header_controls_nav-text">
+                      <p class="header_controls_nav-main">Working Hours</p>
+                      <p class="header_controls_nav-sec">
+                        Sat-Thu 9:00 to 6:00
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="header_controls_nav-item rm-2">
+                  <a class="header_controls_nav-link" href="#">
+                    <i class="fa-solid fa-phone-flip"></i>
+
+                    <div class="header_controls_nav-text">
+                      <p class="header_controls_nav-main">Call Us</p>
+                      <p class="header_controls_nav-sec">+20-01091310677</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="header_controls_nav-item rm-2">
+                  <a class="header_controls_nav-link" href="#">
+                    <i class="fa-regular fa-map"></i>
+
+                    <div class="header_controls_nav-text">
+                      <p class="header_controls_nav-main">Address</p>
+                      <p class="header_controls_nav-sec">
+                        Bin Zayed Street, Dubai, UAE
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="header_container">
+          <div class="header_navbar">
+            <nav class="header_nav">
+              <ul class="header_nav-list">
+                <li class="header_nav-item">
+                  <a href="../../index.html" class="header_nav-link">home</a>
+                </li>
+
+                <li class="header_nav-item">
+                  <a href="../../about us/index.html" class="header_nav-link"
+                    >about us
+                  </a>
+                </li>
+
+                <li class="header_nav-item">
+                  <a href="#" class="header_nav-link"
+                    >services <span>&plus;</span></a
+                  >
+                  <ul class="header_nav-item_sub-menu">
+                    <li>
+                      <a href="../../services/provision/index.html"
+                        >Provision Store</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/bonded/index.html"
+                        >Bonded Store</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/cabin/index.html">Cabin Store</a>
+                    </li>
+                    <li>
+                      <a href="../../services/deck & engine/index.html"
+                        >Deck & Engine Consumables</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/offshore catering/index.html"
+                        >Offshore Catering</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../services/gas & chemicals/index.html"
+                        >Gas & Chemicals</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="header_nav-item">
+                  <a href="../../news/index.html" class="header_nav-link"
+                    >news & events</a
+                  >
+                </li>
+
+                <li class="header_nav-item">
+                  <a href="../../careers/index.html" class="header_nav-link"
+                    >career</a
+                  >
+                </li>
+
+                <li class="header_nav-item">
+                  <a href="../../contact/index.html" class="header_nav-link"
+                    >contact us</a
+                  >
+                </li>
+
+                <li class="header_nav-item">
+                  <a href="#" class="header_nav-link"
+                    >Terms and Policies<span>&plus;</span></a
+                  >
+
+                  <ul class="header_nav-item_sub-menu">
+                    <li>
+                      <a href="../terms and conditions/index.html"
+                        >Terms and Conditions</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../responsibility/index.html"
+                        >Corporate Social Responsibility Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">Quality Policy </a>
+                    </li>
+
+                    <li>
+                      <a href="../slavery policy/index.html"
+                        >Modern Slavery Policy</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header_cta">
+              <!-- <div id="header-cta-toggle" class="header_cta-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div> -->
+              <a href="../../contact/index.html" class="btn btn--2">
+                get a quote
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section-heading">
+      <ul class="pages-list">
+        <li><a href="../../index.html">Home</a></li>
+        <li>Terms & Policies</li>
+        <li>Quality Policy</li>
+      </ul>
+      <!-- <h4 class="heading-tertiary">Contact Us</h4> -->
+      <h2 class="heading-main">Company Quality Policy Statement</h2>
+      <!-- <p class="paragragh-text paragragh-text--center">
+        Welcome to our Terms and Conditions page. This document outlines the
+        rules and guidelines for using our services. Please read it carefully to
+        understand your rights and responsibilities as a user of our ship supply
+        services
+      </p> -->
+
+      <div class="icon-container">
+        <a href="#" class="icon-link">
+          <i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="#" class="icon-link">
+          <i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="icon-link"> <i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="icon-link">
+          <i class="fa-brands fa-x-twitter"></i
+        ></a>
+      </div>
+    </section>
+
+    <section class="section-main">
+      <div class="conditions">
+        <!-- <h3 class="heading-tertiary">Company Quality Policy Statement</h3> -->
+        <div class="condition">
+          <p class="paragragh-text">
+            White-Ship Marine team and management are committed to designing,
+            developing, providing, and assessing certified quality maritime
+            training to ensure safety at sea and to meet the requirements of our
+            customers, regulatory and accrediting bodies.
+          </p>
+
+          <p class="paragragh-text">
+            White-Ship Marine will constantly provide products & services that
+            meet or exceed the requirements & expectations & satisfaction of our
+            customers.
+          </p>
+
+          <p class="paragragh-text">
+            It is the stated directive of the Executive Management that
+            White-Ship Marine employees at all levels are familiar with and
+            encouraged to be committed to the quality incentive and the
+            requirements defined within the Corporate Quality Manual, to ensure
+            the organization achieves these desired quality goals.
+          </p>
+
+          <p class="paragragh-text">
+            All employees shall comply with the requirements at White-Ship
+            Marine Quality Management System which is based on the requirements
+            of ISO 9001-2015. This system shall be subject to a process of
+            continual improvement through White-Ship Marine Quality Management
+            Review Systems.
+          </p>
+
+          <p class="paragragh-text">
+            Objectives processes provide a framework for establishing and
+            reviewing Quality Objectives periodically for continuing improvement
+            & Suitability of QMS and compliance with the legal requirements.
+            Also, be available to relevant interested parties, as appropriate.
+          </p>
+
+          <p class="paragragh-text">
+            In respect of Quality Management matters the Corporate nominated
+            representative has the responsibility and delegated authority of the
+            Executive Management to take whatever measures are considered
+            necessary to Implement and achieve the quality policy goals
+            identified herein. The quality representative shall report regularly
+            on achievements and/or areas of restraint and shall identify the
+            adequacy of resources, both human and material so that the
+            requirements can be fully affected.
+          </p>
+
+          <p class="paragragh-text">
+            This policy statement will be displayed in prominent places
+            throughout the organization so that every employee shall have a
+            clear understanding of the policy requirements and their required
+            support and commitment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="footer_top_left">
+          <img
+            src="imgs/logo-removebg-preview.png"
+            alt="logo of white ship"
+            class="footer_logo"
+          />
+        </div>
+
+        <div class="footer_top_right">
+          <div class="footer_heading">
+            <h4 class="footer_header">
+              Subscribe to our latest news & articles
+            </h4>
+          </div>
+          <div class="footer_subscriber">
+            <input
+              type="email"
+              class="form_input form_input--footer"
+              placeholder="Your Email"
+            />
+            <a href="#" class="footer_subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="footer_about">
+          <h4 class="footer_title">About Company</h4>
+          <p class="footer_details">
+            your trusted partner in logistics and marine supply services, Based
+            in the UAE.
+          </p>
+
+          <div class="icon-container">
+            <a href="#" class="icon-link">
+              <i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" class="icon-link">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" class="icon-link">
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#" class="icon-link">
+              <i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer_item">
+          <h4 class="footer_title">Browse</h4>
+          <ul class="footer_nav">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../about us/index.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="../../news/index.html">News</a></li>
+            <li><a href="../../contact/index.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_item">
+          <h4 class="footer_title">Services</h4>
+          <ul class="footer_nav">
+            <li>
+              <a href="../../services/provision/index.html">Provision Store</a>
+            </li>
+            <li><a href="../../services/bonded/index.html">Bonded Store</a></li>
+            <li><a href="../../services/cabin/index.html">Cabin Store</a></li>
+            <li>
+              <a href="../../services/deck & engine/index.html"
+                >Deck & Engine</a
+              >
+            </li>
+            <li>
+              <a href="../../services/offshore catering/index.html"
+                >Offshore Catering</a
+              >
+            </li>
+            <li>
+              <a href="../../services/gas & chemicals/index.html"
+                >Gas & Chemicals</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_contact">
+          <div class="footer_title">Contact Now</div>
+          <div class="footer_contact-container">
+            <div class="footer_call">
+              <i class="fa-solid fa-phone-flip"></i>
+
+              <div class="header_controls_nav-text">
+                <p
+                  class="header_controls_nav-main header_controls_nav-main--white"
+                >
+                  Call Us
+                </p>
+                <p class="header_controls_nav-sec">+20-01091310677</p>
+              </div>
+            </div>
+
+            <div class="footer_call">
+              <i class="fa-regular fa-envelope"></i>
+
+              <div class="header_controls_nav-text">
+                <p
+                  class="header_controls_nav-main header_controls_nav-main--white"
+                >
+                  Email
+                </p>
+                <p class="header_controls_nav-sec">A.emadelsayed@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="footer_call">
+              <i class="fa-regular fa-map"></i>
+
+              <div class="header_controls_nav-text">
+                <p
+                  class="header_controls_nav-main header_controls_nav-main--white"
+                >
+                  Address
+                </p>
+                <p class="header_controls_nav-sec">
+                  Bin Zayed ST., Abu Dhabi, UAE
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

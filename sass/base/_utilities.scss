@@ -9,6 +9,7 @@
 
   @media screen and (max-width: $medium-bp) {
     flex-direction: column;
+
     // width: 100%;
   }
 
@@ -31,4 +32,8 @@
 
 .sm-m-4 {
   margin-top: 12rem;
+}
+
+.no-border {
+  border: none !important;
 }

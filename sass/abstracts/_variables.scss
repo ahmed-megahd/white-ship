@@ -2,14 +2,16 @@
 $main-font: "krub", "sans-serif";
 $main-font: "PT Sans", "sans-serif";
 $main-font: "Nunito", "sans-serif";
+// $main-font: "Montserrat", "sans-serif";
 // $headers-font: "rubik", "open-sans";
-$headers-font: "Montserrat", "open-sans";
+// $headers-font: "Montserrat", "open-sans";
 // $headers-font: "Lato", "open-sans";
 // $headers-font: "Encode Sans Condensed", "open-sans";
-// $headers-font: "Hind", "open-sans";
-// $headers-font: "Inter", "open-sans";
+// $headers-font: "Hind", "open-sans";  //not too uch preferred
+$headers-font: "Inter", "open-sans";
 // $headers-font: "Titillium Web", "open-sans";
 // $headers-font: "Source Sans 3", "open-sans";
+// $headers-font: "Roboto", sans-serif;
 $default-font-size: 1.6rem;
 
 //color specs
@@ -19,9 +21,17 @@ $color-white-bg: #fff;
 $color-primary: #184981;
 $color-primary: #174e9a;
 $color-secondary: #06103a;
+$color-secondary: #333;
 // $color-secondary: #111;
 $color-tertiary: #5c94a9;
 $color-tertiary-2: #cb9fcb;
+
+// Color variables
+$primary-blue: #0f4c81;
+$secondary-blue: #6ba4b8;
+$accent-purple: #cb9fcb;
+$white: #ffffff;
+$text-dark: #333333;
 
 //break points
 $small-bp: 479px;

@@ -19,21 +19,13 @@
   // height: 100vh;
   width: 100%;
 
-  // &_number {
-  //   color: $color-white;
-  //   font-size: 1.2rem;
-  //   padding: 0.8rem 1.2rem;
-  //   position: absolute;
-  //   top: 0;
-  // }
-
   @media screen and (max-width: $small-bp) {
     // height: 70vh;
   }
 
   &_desc {
     color: $color-secondary;
-    // background-color: rgba($color-secondary, 0.7);
+    background-color: rgba($color-secondary, 0.7);
     padding: 4rem;
     width: 65%;
     position: absolute;
@@ -46,9 +38,14 @@
 
     @media screen and (max-width: $large-bp) {
       // width: 75%;
-      transform: translate(-80%, -60%);
+      transform: translate(-70%, -60%);
       padding: 2.5rem;
       // padding: 4rem 2rem;
+    }
+
+    @media screen and (max-width: $small-bp) {
+      transform: translate(-80%, -60%);
+      padding-left: 2rem;
     }
   }
 
@@ -59,8 +56,7 @@
     object-fit: cover;
     // object-fit: contain;
     // opacity: 0.5;
-    filter: brightness(60%);
-
+    // filter: brightness(80%);
     @media screen and (max-width: $large-bp) {
       // height: 90vh;
       max-width: 100%;
@@ -85,7 +81,7 @@
     // margin-top: 2rem;
     line-height: 1.3;
     margin-bottom: 3rem;
-    animation: slideRight2 2s;
+    animation: slideRight2 4s;
     // font-weight: 700;
     font-size: 1.8rem;
 
@@ -97,30 +93,19 @@
 
 .slideshow-slide-service {
   width: 31%;
-  // max-width: 100%;
-  // height: 60%;
-  // padding: 2rem;
-  // padding-bottom: 1rem;
-  // height: 25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  // box-shadow: 0 5px 10px rgba($color-secondary, 0.2);
-  // border-radius: 0.6rem;
-  // position: relative;
-  // overflow: hidden;
   transform-origin: center;
   will-change: transform;
-  // background-color: rgba(#111, 0.7);
-  background-color: transparent;
-  // background-color: #fff;
   overflow: hidden;
   transition: all 0.3s;
   margin-bottom: 6rem;
-  // border-bottom: 3px solid $color-primary;
-
-  @media screen and (max-width: $large-bp) {
+  background-color: $white;
+  box-shadow: 0px 5px 15px #e1e1e1;
+  position: relative;
+  @media screen and (max-width: $extra-large-bp) {
     width: 45%;
   }
 
@@ -130,77 +115,75 @@
 
   &_describtion {
     width: 100%;
-    // background-color: indianred;
-    // background-color: $color-white;
-    // background-color: rgba($color-white, 0.4);
-    // padding: 0rem 2rem;
-    // padding-bottom: 2rem;
-    // border-left: 1px solid $color-secondary;
-    // height: 22rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: $white;
+
+    .btn-container {
+      opacity: 0;
+      visibility: hidden;
+      will-change: transform;
+      transition: all 0.3s;
+    }
   }
 
   &_header {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     font-family: $headers-font;
     font-weight: 700;
-    // text-transform: uppercase;
-    color: $color-secondary;
-    // margin-top: 1rem;
     margin-bottom: 1.5rem;
-    position: relative;
-
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   width: 4rem;
-    //   height: 3px;
-    //   // padding-bottom: 1rem;
-    //   // margin-bottom: 1rem;
-    //   background-color: $color-primary;
-    //   position: absolute;
-    //   top: 0;
-    //   // left: 0;
-    // }
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    will-change: transform;
+    transition: all 0.3s;
   }
 
   &_text {
     font-size: 1.6rem;
     line-height: 1.3;
-    // text-align: center;
-    // padding-bottom: 2rem;
-    height: 10rem;
+    margin: 2rem 0;
+    // height: 10rem;
+    text-align: center;
     font-weight: 500;
-    // line-height: 1.2;
-    color: rgba($color-secondary, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform;
+    transition: all 0.3s;
 
     @media screen and (max-width: $small-bp) {
       font-size: 1.8rem;
     }
   }
 
-  // &_number {
-  //   position: absolute;
-  //   top: 90%;
-  //   right: 0;
-  //   padding: 0 3rem;
-  //   color: $color-secondary;
-  //   font-size: 1.6rem;
-  //   font-weight: 700;
-  // }
-
   &:hover {
-    // .btn-container .btn-service {
-    //   display: block;
-    //   width: 50%;
-    // }
-    // border: 1px solid $color-primary;
+    .btn-container {
+      opacity: 1;
+      visibility: visible;
+    }
+    .slideshow-slide-service_describtion {
+      .slideshow-slide-service_header {
+        top: 0;
+      }
+      .slideshow-slide-service_text {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
     transform: scale(1.08);
     .img-container {
       img {
         transform: scale(1.08);
+        filter: brightness(20%);
       }
     }
   }

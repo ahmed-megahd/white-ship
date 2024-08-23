@@ -1,0 +1,20 @@
+.condition {
+  width: 100%;
+  padding: 2rem;
+
+  &_list {
+    padding: 0 2rem;
+    margin-left: 1rem;
+
+    &--alpha {
+      list-style: lower-alpha;
+    }
+  }
+
+  &_item {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: rgba($color: $color-secondary, $alpha: 0.7);
+  }
+}

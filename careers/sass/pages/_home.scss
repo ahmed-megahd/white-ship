@@ -1,0 +1,329 @@
+.section-aside {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  backface-visibility: hidden;
+  background-color: $color-white;
+  z-index: 9999;
+  transition: all 0.3s;
+
+  &_img {
+    width: 20rem;
+    // overflow: hidden;
+    transform: scale(1.6);
+  }
+
+  &_close {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2.4rem;
+    // span {
+    //   position: absolute;
+    //   width: 2.4rem;
+    //   height: 2px;
+    //   opacity: 0.5;
+    //   transition: all 0.3s;
+    //   background-color: $color-white;
+
+    //   &:first-child {
+    //     transform: rotate(45deg);
+    //   }
+
+    //   &:last-child {
+    //     transform: rotate(135deg);
+    //   }
+    // }
+
+    // &:hover {
+    //   span:first-child {
+    //     transform: rotate(0deg);
+    //   }
+
+    //   span:last-child {
+    //     transform: rotate(180deg);
+    //   }
+    // }
+  }
+
+  .navigation {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  &_contact {
+    width: 100%;
+    padding: 2rem;
+    // margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $large-bp) {
+      flex-direction: column;
+    }
+
+    &-wrapper {
+      width: 32%;
+      margin: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: $large-bp) {
+        width: 80%;
+      }
+    }
+
+    &_icon-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
+      background-color: $color-primary;
+
+      i {
+        font-size: 2rem;
+        color: $color-white;
+      }
+    }
+
+    &-info {
+      font-size: 1.8rem;
+      color: $color-secondary;
+      font-weight: 700;
+    }
+  }
+
+  &_socials {
+    width: 100%;
+    padding: 2rem 4rem;
+    // margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          width: 6rem;
+          height: 6rem;
+          background-color: $color-white;
+          border: 1px solid $color-primary;
+
+          i {
+            font-size: 2.4rem;
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-aside-open {
+  right: 0;
+}
+
+.section-heading {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(51, 51, 51, 0.8) 40%,
+      rgba(15, 76, 129, 0.7) 70%
+    ),
+    url(../imgs/team-work-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 90vh;
+  // text-align: center;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  padding: 8rem 4rem;
+  padding-top: 12rem;
+  margin-bottom: 4rem;
+  //   margin-top: 2rem;
+
+  @media screen and (max-width: $extra-large-bp) {
+    height: 45vh;
+  }
+
+  @media screen and (max-width: $large-bp) {
+    padding: 8rem 2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: $small-bp) {
+    height: 70vh;
+  }
+
+  .icon-container {
+    width: 80%;
+
+    .icon-link {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      text-decoration: none;
+
+      i {
+        font-size: 2.2rem;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.section-wrapper {
+  width: 100%;
+  padding: 6rem 4rem;
+  margin: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: $large-bp) {
+    flex-direction: column;
+    padding: 8rem 2rem;
+  }
+
+  &_left,
+  &_right {
+    width: 50%;
+
+    @media screen and (max-width: $large-bp) {
+      width: 100%;
+    }
+  }
+
+  &_right {
+    @media screen and (max-width: $large-bp) {
+      margin-bottom: 1rem;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.section-diversity,
+.section-vacancies {
+  width: 100%;
+  padding: 6rem 4rem;
+  background-color: #f5f5f5;
+
+  @media screen and (max-width: $large-bp) {
+    padding: 8rem 2rem;
+  }
+  &_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    .paragragh-text {
+      text-align: center;
+
+      @media screen and (max-width: $large-bp) {
+        text-align: left;
+        width: 100%;
+      }
+    }
+  }
+
+  &_bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media screen and (max-width: $large-bp) {
+      flex-direction: column;
+    }
+
+    .paragragh-text {
+      margin: 0 1rem;
+    }
+  }
+}
+
+.section-vacancies {
+  &_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.section-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-around;
+  padding: 6rem 4rem;
+  // padding-bottom: 4rem;
+  width: 100%;
+  background-color: $color-white;
+
+  @media screen and (max-width: $large-bp) {
+    flex-direction: column;
+    padding: 8rem 2rem;
+  }
+
+  &_left {
+    // width: 40%;
+    // padding: 1rem;
+
+    @media screen and (max-width: $large-bp) {
+      width: 100%;
+    }
+
+    &_top {
+      color: $color-secondary;
+      margin-bottom: 4rem;
+
+      .heading-secondary {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &_bottom {
+      width: 100%;
+      // color: $color-secondary;
+    }
+  }
+
+  &_right {
+    width: 100%;
+    // width: 52%;
+    // padding: 2rem 1rem;
+
+    @media screen and (max-width: $large-bp) {
+      width: 100%;
+    }
+    // padding-top: 4rem;
+  }
+}

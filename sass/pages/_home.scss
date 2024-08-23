@@ -122,9 +122,10 @@
 
 .section-main {
   width: 100%;
-  height: 85rem;
+  height: 70rem;
+  // height: 100vh;
   position: relative;
-  // margin-top: -8rem;
+  // margin-top: -6rem;
   margin-bottom: 4rem;
 
   @media screen and (max-width: $large-bp) {
@@ -161,15 +162,19 @@
 
   &_wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
   &_heading {
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
+
 .section-values {
   @media screen and (max-width: $small-bp) {
     padding-bottom: 0;
@@ -184,12 +189,12 @@
 
 .section-about {
   width: 100%;
-  // height: auto;
+  height: auto;
   // height: 55rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8rem 4rem;
+  padding: 10rem 4rem;
   margin-bottom: 4rem;
   background-color: $color-white-bg;
 
@@ -203,11 +208,11 @@
   // background-color: #f6f7f9;
 
   &_left {
-    width: 50%;
+    width: 45%;
     // height: 100%;
     // background-color: $color-secondary;
     height: 55rem;
-    padding: 1rem 3rem;
+    padding: 1rem 0;
 
     @media screen and (max-width: $large-bp) {
       width: 100%;
@@ -215,24 +220,6 @@
       // height: 40rem;
       padding: 0;
     }
-    // position: relative;
-    // padding-left: 2rem;
-    // display: flex;
-    // align-items: center;
-    // overflow: hidden;
-    // background-color: rgba($color: $color-primary, $alpha: 1);
-
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 25%;
-    //   right: 0;
-    //   width: 40rem;
-    //   height: 52rem;
-    //   padding: 0;
-    //   background-color: $color-white;
-    //   border: 10px solid rgba($color: $color-primary, $alpha: 1);
-    // }
 
     &_info {
       display: inline-block;
@@ -249,13 +236,8 @@
     }
 
     &_img-container {
-      // display: inline-block;
       width: 100%;
       height: 100%;
-      position: relative;
-      // border-radius: 0.6rem;
-      // margin-left: 10rem;
-      // border-right: 6px solid $color-primary;
 
       @media screen and (max-width: $large-bp) {
         margin-bottom: 2rem;
@@ -265,75 +247,61 @@
         display: inline-block;
         width: 100%;
         height: 100%;
-        overflow: hidden;
 
         @media screen and (max-width: $small-bp) {
           height: 55vh;
           margin-bottom: 2rem;
         }
-        // object-fit: cover;
-        // vertical-align: middle;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -30%);
-        // filter: brightness(80%);
-        // box-shadow: 0px 3px 10px rgba($color: $color-secondary, $alpha: 0.6);
-
-        // &--2 {
-        //   top: 60%;
-        //   right: 0;
-        // }
       }
     }
   }
 
   &_right {
     width: 60%;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: ;
-    padding-left: 3rem;
+    padding-left: 8rem;
 
     @media screen and (max-width: $large-bp) {
       width: 85%;
       padding-left: 0;
     }
 
-    @media screen and (max-width: $small-bp) {
+    @media screen and (max-width: $medium-bp) {
+      margin-top: 2rem;
       width: 100%;
+    }
+
+    @media screen and (max-width: $small-bp) {
+      margin-top: 0;
+    }
+  }
+
+  &_wrapper {
+    width: 100%;
+    padding: 1rem;
+    // padding-left: 0;
+
+    &_grey {
+      background-color: #f5f5f5;
+      margin-bottom: 1rem;
+    }
+
+    .heading-secondary {
+      transform: translateY(1.5rem);
     }
   }
 }
-
-// .section-about-2 {
-//   width: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   padding: 2rem 4rem;
-//   // margin-bottom: 6rem;
-//   // margin-top: -4rem;
-//   // margin-top: 2rem;
-//   padding-left: 10rem;
-//   // background-image: linear-gradient(
-//   //   to right bottom,
-//   //   rgba($color-secondary, 0.3),
-//   //   $color-white
-//   // );
-// }
 
 .section-about-3 {
   position: relative;
   overflow: hidden;
   width: 100%;
   // height: 84rem;
-  margin-bottom: 14rem;
+  margin-bottom: 10rem;
   padding: 8rem 4rem;
   background-image: linear-gradient(
       to bottom,
-      $color-primary,
-      rgba($color-primary, 0.6)
+      $primary-blue,
+      rgba($primary-blue, 0.6)
     ),
     url(../imgs/section-about/fredrick-f-U9_pRASawlc-unsplash.jpg);
   background-size: cover;
@@ -359,7 +327,7 @@
 
   &_bottom {
     width: 100%;
-    padding: 5rem 1rem;
+    padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     @media screen and (max-width: $small-bp) {
@@ -385,7 +353,16 @@
 .section-certificates {
   width: 100%;
   height: 100%;
+  padding: 4rem 16rem;
   // padding-bottom: 2rem;
+
+  @media screen and (max-width: $extra-large-bp) {
+    padding: 4rem;
+  }
+
+  @media screen and (max-width: $small-bp) {
+    padding: 2rem;
+  }
   &_heading {
     margin-bottom: 1rem;
   }
@@ -406,7 +383,7 @@
 .section-services {
   width: 100%;
   height: 100%;
-  padding: 8rem 4rem;
+  padding: 4rem;
 
   @media screen and (max-width: $large-bp) {
     padding: 6rem 2rem;
@@ -415,18 +392,9 @@
   @media screen and (max-width: $small-bp) {
     padding: 4rem 2rem;
   }
-  // margin-bottom: 5rem;
-  // background-image: linear-gradient(
-  //     to bottom right,
-  //     rgba(#111, 0.85),
-  //     rgba(#111, 0.85)
-  //   ),
-  //   url(../../imgs/section-about/img-1.jpg);
-
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  background-color: #f6f7f9;
+  // background-color: #f6f7f9;
   background-color: $color-white;
+  // background-color: #f5f5f5;
   &_top {
     width: 100%;
     // display: flex;
@@ -465,17 +433,17 @@
     .img-container {
       // width: 80rem;
       width: 100%;
-      height: 24rem;
+      height: 32rem;
       // height: 100%;
-      margin-bottom: 2rem;
+      // margin-bottom: 2rem;
       transform-origin: center;
       will-change: transform;
       overflow: hidden;
       position: relative;
 
-      @media screen and (max-width: $small-bp) {
-        height: 100%;
-      }
+      // @media screen and (max-width: $small-bp) {
+      //   height: 100%;
+      // }
 
       img {
         display: inline-block;
@@ -486,10 +454,7 @@
         overflow: hidden;
         transform-origin: center;
         will-change: transform;
-        // border-top-left-radius: 1.2rem;
-        // border-top-right-radius: 1.2rem;
-        // filter: brightness(90%);
-        // overflow: hidden;
+        filter: brightness(60%);
       }
     }
   }
@@ -499,7 +464,7 @@
 .section-news {
   width: 100%;
   height: 100%;
-  padding: 8rem 4rem;
+  padding: 6rem 4rem;
   background-color: $color-white-bg;
   display: flex;
   flex-direction: column;
@@ -541,10 +506,18 @@
 
 .section-steps {
   &_bottom {
+    width: 100%;
     @media screen and (max-width: $extra-large-bp) {
       width: 100%;
+      padding: 2rem 10rem;
+    }
+
+    @media screen and (max-width: $small-bp) {
+      width: 100%;
+      display: flex;
       flex-direction: column;
-      align-items: center;
+      padding: 0;
+      text-align: center;
     }
   }
 }
@@ -553,12 +526,16 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 8rem 4rem;
+  padding: 6rem 4rem;
   width: 100%;
   // height: 100%;
   // height: 60rem;
   background-color: $color-secondary;
-
+  background-image: linear-gradient(
+    50deg,
+    rgb(107, 164, 184),
+    rgb(15, 76, 129)
+  );
   @media screen and (max-width: $large-bp) {
     padding: 6rem 2rem;
     flex-direction: column;
@@ -605,6 +582,7 @@
 
 .section-news {
   background-image: none;
+  margin-bottom: 5rem;
   &_bottom {
     width: 100%;
     padding-top: 0;

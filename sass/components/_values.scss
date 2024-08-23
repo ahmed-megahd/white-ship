@@ -1,32 +1,39 @@
 .value {
-  width: 32%;
+  width: 25%;
+  // height: 27rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $color-white-bg;
-  padding: 2rem 2rem;
-  // box-shadow: 0 5px 15px #eee;
-  // border: 1px solid rgba($color: $color-secondary, $alpha: 0.7);
+  // background-color: #f5f5f5;
+  // padding: 2rem;
+  // box-shadow: 0 5px 15px #e1e1e1;
+  // border-right: 3px solid #e1e1e1;
+  // border: 1px solid $primary-blue;
   &:not(:last-of-type) {
-    margin-right: 2rem;
+    // margin-right: 2rem;
 
     @media screen and (max-width: $large-bp) {
       margin-right: 0;
+      height: auto;
     }
   }
 
-  @media screen and (max-width: $large-bp) {
+  @media screen and (max-width: $extra-large-bp) {
     width: 45%;
+
+    &:not(:last-of-type) {
+      // margin-right: -22rem;
+    }
   }
 
   @media screen and (max-width: $small-bp) {
-    width: 80%;
+    width: 100%;
     margin-bottom: 2rem;
   }
 
   &_img-wrapper {
-    width: 9rem;
-    height: 9rem;
+    width: 12rem;
+    height: 12rem;
     margin-bottom: 1rem;
     border-radius: 50%;
     // background-color: $color-primary;
@@ -38,8 +45,8 @@
 
   &_img {
     display: inline-block;
-    max-width: 80%;
-    height: 80%;
+    max-width: 85%;
+    height: 100%;
 
     @media screen and (max-width: $small-bp) {
       max-width: 100%;
@@ -50,10 +57,11 @@
   &_name {
     font-size: 2rem;
     font-family: $headers-font;
-    // color: $color-p;
     color: $color-secondary;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    color: $text-dark;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
 
     @media screen and (max-width: $small-bp) {
       font-size: 2.4rem;
@@ -77,9 +85,9 @@
     padding: 1rem;
     text-align: center;
     font-size: 1.6rem;
-    line-height: 1.3;
-    font-weight: 400;
-    color: rgba($color: $color-secondary, $alpha: 0.7);
+    line-height: 1.5;
+    font-weight: 500;
+    color: rgba($color: $color-secondary, $alpha: 0.9);
 
     @media screen and (max-width: $small-bp) {
       font-size: 1.8rem;

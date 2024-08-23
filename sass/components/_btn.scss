@@ -1,11 +1,11 @@
 .btn {
   cursor: pointer;
   display: inline-block;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   text-transform: uppercase;
   text-align: center;
   color: $color-white;
-  background-color: $color-primary;
+  background-color: $primary-blue;
   font-weight: 600;
   font-size: 1.4rem;
   font-family: $headers-font;
@@ -14,6 +14,15 @@
   border: 0;
   position: relative;
   z-index: 1;
+
+  &--white {
+    background-color: $white;
+    color: $text-dark;
+
+    &:hover {
+      color: $white;
+    }
+  }
 
   @media screen and (max-width: $medium-bp) {
     width: 100%;
@@ -28,22 +37,12 @@
     transform: translate(-50%, -50%);
     width: 10px;
     height: 100%;
-    background-color: $color-secondary;
+    background-color: $color-primary;
     opacity: 0;
     visibility: hidden;
     z-index: -1;
     transition: 0.3s;
   }
-
-  // &--value {
-  //   color: $color-secondary;
-  //   background-color: $color-white-bg;
-  //   font-style: italic;
-
-  //   &:hover {
-  //     color: $color-white;
-  //   }
-  // }
 
   &:hover {
     &::before {
@@ -68,12 +67,12 @@
   }
 
   &-1 {
-    width: 45%;
+    width: 25%;
     font-size: $default-font-size;
     animation: slideRight2 2s;
 
     @media screen and (max-width: $small-bp) {
-      width: 75%;
+      width: 100%;
     }
   }
 
@@ -93,16 +92,20 @@
     width: 100%;
     padding: 1rem 2rem;
     background-color: $color-white;
-    border: 1px solid $color-secondary;
+    // border: 1px solid $color-secondary;
     color: $color-secondary;
     letter-spacing: 1px;
+
+    // &--nb {
+    //   border: none;
+    // }
 
     &:hover {
       color: $color-white;
     }
 
     &:hover::before {
-      background-color: $color-secondary;
+      background-color: $primary-blue;
     }
   }
 }

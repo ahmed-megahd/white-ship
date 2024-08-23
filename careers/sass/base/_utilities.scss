@@ -1,0 +1,11 @@
+.pd-4 {
+  padding-left: 4rem;
+
+  @media screen and (max-width: $large-bp) {
+    padding-left: 0;
+  }
+}
+
+.rm-2 {
+  margin-right: 2rem;
+}

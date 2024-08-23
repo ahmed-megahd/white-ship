@@ -1,0 +1,53 @@
+.motto-container {
+  width: 100%;
+  background-image: linear-gradient(
+    50deg,
+    rgb(107, 164, 184),
+    rgb(15, 76, 129)
+  );
+  padding: 2rem 10rem;
+  text-align: center;
+
+  @media screen and (max-width: $large-bp) {
+    padding: 2rem 4rem;
+  }
+
+  @media screen and (max-width: $medium-bp) {
+    padding: 2rem 10rem;
+
+    // .btn {
+    //   width: 50%;
+    // }
+  }
+
+  @media screen and (max-width: $small-bp) {
+    padding: 2rem 4rem;
+  }
+}
+.motto {
+  width: 100%;
+  margin-bottom: 1rem;
+  //   height: 20rem;
+  color: $color-white;
+  font-family: $headers-font;
+  font-size: 3rem;
+  font-weight: 700;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  font-weight: 800;
+  text-transform: capitalize;
+
+  &--white {
+    color: $color-secondary;
+    background-color: $color-white;
+  }
+
+  @media screen and (max-width: $small-bp) {
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+}
