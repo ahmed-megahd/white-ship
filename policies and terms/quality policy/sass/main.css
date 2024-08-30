@@ -839,6 +839,7 @@ input[type=number] {
   text-align: center;
   font-size: 1.8rem;
   margin-left: 0.4rem;
+  transition: all 0.2s;
 }
 .header_nav-link::before {
   content: "";
@@ -853,6 +854,9 @@ input[type=number] {
   visibility: hidden;
   z-index: -1;
   transition: all 0.2s;
+}
+.header_nav-link:hover span {
+  transform: rotate(130deg);
 }
 .header_nav-link:hover::before {
   width: 75%;

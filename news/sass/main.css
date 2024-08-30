@@ -1004,6 +1004,7 @@ input[type=number] {
   text-align: center;
   font-size: 1.8rem;
   margin-left: 0.4rem;
+  transition: all 0.2s;
 }
 .header_nav-link::before {
   content: "";
@@ -1018,6 +1019,9 @@ input[type=number] {
   visibility: hidden;
   z-index: -1;
   transition: all 0.2s;
+}
+.header_nav-link:hover span {
+  transform: rotate(130deg);
 }
 .header_nav-link:hover::before {
   width: 75%;
@@ -1159,7 +1163,7 @@ input[type=number] {
 .section-heading {
   width: 100%;
   height: 70vh;
-  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.8) 40%, rgba(15, 76, 129, 0.7) 70%), url(../imgs/img-1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.8) 40%, rgba(15, 76, 129, 0.7) 70%), url(../imgs/heading-img.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
