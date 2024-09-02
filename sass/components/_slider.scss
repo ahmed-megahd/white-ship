@@ -44,7 +44,10 @@
     }
 
     @media screen and (max-width: $small-bp) {
-      transform: translate(-80%, -60%);
+      width: 100%;
+      word-wrap: break-word;
+
+      transform: translate(-50%, -60%);
       padding-left: 2rem;
     }
   }

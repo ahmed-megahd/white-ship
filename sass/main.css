@@ -70,12 +70,12 @@ body {
 }
 
 .heading-main {
-  font-size: 6.2rem;
+  font-size: 7.2rem;
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 4rem;
   font-family: "Inter", "open-sans";
-  font-weight: 700;
+  font-weight: 600;
   animation: slideRight2 4s;
 }
 .heading-main span {
@@ -95,9 +95,9 @@ body {
 }
 
 .heading-secondary {
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: "Inter", "open-sans";
-  font-weight: 700;
+  font-weight: 600;
   color: #333333;
   line-height: 1.1;
   margin-bottom: 4rem;
@@ -617,7 +617,7 @@ input[type=number] {
 .motto-container {
   width: 100%;
   background-image: linear-gradient(50deg, rgb(107, 164, 184), rgb(15, 76, 129));
-  padding: 2rem 10rem;
+  padding: 6rem 10rem;
   text-align: center;
 }
 @media screen and (max-width: 991px) {
@@ -656,6 +656,7 @@ input[type=number] {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0;
+    line-height: 1;
   }
 }
 
@@ -773,6 +774,7 @@ input[type=number] {
 }
 
 .text-box {
+  line-height: 1.2;
   color: #333;
 }
 .text-box h3 {
@@ -898,7 +900,9 @@ input[type=number] {
 }
 @media screen and (max-width: 479px) {
   .slideshow-slide_desc {
-    transform: translate(-80%, -60%);
+    width: 100%;
+    word-wrap: break-word;
+    transform: translate(-50%, -60%);
     padding-left: 2rem;
   }
 }
@@ -1221,10 +1225,8 @@ input[type=number] {
   }
 }
 .value_img-wrapper {
-  width: 12rem;
   height: 12rem;
   margin-bottom: 1rem;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1241,13 +1243,11 @@ input[type=number] {
   }
 }
 .value_name {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-family: "Inter", "open-sans";
   color: #333;
-  color: #333333;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
 }
 @media screen and (max-width: 479px) {
   .value_name {
@@ -1269,7 +1269,7 @@ input[type=number] {
 .value_text {
   padding: 1rem;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 500;
   color: rgba(51, 51, 51, 0.9);
@@ -1534,7 +1534,7 @@ input[type=number] {
 }
 .footer_call .header_controls_nav-sec {
   font-size: 1.6rem;
-  margin-top: 1rem;
+  margin-top: 0.6rem;
   color: #fff;
 }
 .footer_call .header_controls_nav-sec:hover {
@@ -1679,7 +1679,6 @@ input[type=number] {
 }
 .header_controls_nav-text {
   margin-left: 1.5rem;
-  font-size: 1.3rem;
   line-height: 1.3;
 }
 .header_controls_nav-main {
@@ -2021,6 +2020,11 @@ input[type=number] {
   align-items: center;
 }
 
+.section-values_heading {
+  padding-bottom: 6rem;
+  border-bottom: 1px solid #174e9a;
+  margin-bottom: 6rem;
+}
 @media screen and (max-width: 479px) {
   .section-values {
     padding-bottom: 0;
@@ -2049,14 +2053,20 @@ input[type=number] {
   }
 }
 .section-about_left {
-  width: 45%;
-  height: 55rem;
+  width: 50%;
+  height: 70rem;
   padding: 1rem 0;
 }
 @media screen and (max-width: 991px) {
   .section-about_left {
     width: 100%;
     padding: 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-about_left {
+    height: 48rem;
+    margin-top: 2rem;
   }
 }
 .section-about_left_info {
@@ -2078,44 +2088,47 @@ input[type=number] {
 }
 @media screen and (max-width: 991px) {
   .section-about_left_img-container {
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
   }
 }
 .section-about_left_img-container .section-about_img {
   display: inline-block;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 479px) {
   .section-about_left_img-container .section-about_img {
     height: 55vh;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 }
 .section-about_right {
   width: 60%;
-  padding-left: 8rem;
+  padding-right: 8rem;
 }
 @media screen and (max-width: 991px) {
   .section-about_right {
-    width: 85%;
-    padding-left: 0;
+    width: 100%;
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 770px) {
   .section-about_right {
     margin-top: 2rem;
-    width: 100%;
   }
 }
 @media screen and (max-width: 479px) {
   .section-about_right {
     margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 .section-about_wrapper {
   width: 100%;
   padding: 1rem;
+  margin-bottom: 3rem;
 }
 .section-about_wrapper_grey {
   background-color: #f5f5f5;

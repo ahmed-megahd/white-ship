@@ -5,7 +5,7 @@
     rgb(107, 164, 184),
     rgb(15, 76, 129)
   );
-  padding: 2rem 10rem;
+  padding: 6rem 10rem;
   text-align: center;
 
   @media screen and (max-width: $large-bp) {
@@ -14,10 +14,6 @@
 
   @media screen and (max-width: $medium-bp) {
     padding: 2rem 10rem;
-
-    // .btn {
-    //   width: 50%;
-    // }
   }
 
   @media screen and (max-width: $small-bp) {
@@ -49,5 +45,6 @@
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0;
+    line-height: 1;
   }
 }

@@ -32,10 +32,9 @@
   }
 
   &_img-wrapper {
-    width: 12rem;
+    // width: 12rem;
     height: 12rem;
     margin-bottom: 1rem;
-    border-radius: 50%;
     // background-color: $color-primary;
     // margin-bottom: 3rem;
     display: flex;
@@ -55,13 +54,12 @@
   }
 
   &_name {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: $headers-font;
     color: $color-secondary;
-    color: $text-dark;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    // margin-bottom: 0.5rem;
 
     @media screen and (max-width: $small-bp) {
       font-size: 2.4rem;
@@ -84,7 +82,7 @@
   &_text {
     padding: 1rem;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     font-weight: 500;
     color: rgba($color: $color-secondary, $alpha: 0.9);

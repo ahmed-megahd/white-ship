@@ -121,7 +121,12 @@
 }
 
 .section-heading {
-  @include headingBackground;
+  // @include headingBackground;
+  background-color: #fff;
+  // background-image: url(../imgs/hero-img-2.jpg);
+  background-size: cover;
+  object-fit: contain;
+
   width: 100%;
   height: 90vh;
   text-align: center;

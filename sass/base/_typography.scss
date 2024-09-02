@@ -1,11 +1,11 @@
 .heading-main {
-  font-size: 6.2rem;
+  font-size: 7.2rem;
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 4rem;
   // color: $color-primary;
   font-family: $headers-font;
-  font-weight: 700;
+  font-weight: 600;
   animation: slideRight2 4s;
 
   span {
@@ -29,9 +29,9 @@
 }
 
 .heading-secondary {
-  font-size: 5rem;
+  font-size: 6rem;
   font-family: $headers-font;
-  font-weight: 700;
+  font-weight: 600;
   color: $text-dark;
   line-height: 1.1;
   margin-bottom: 4rem;
