@@ -72,20 +72,14 @@
     }
   }
 
-  &_top-bar.scroll {
-    display: none;
-  }
-
   &_img {
     max-width: 18rem;
     img {
       display: inline-block;
-      transform: scale(1.6);
+      transform: scale(2);
       z-index: 11111;
       width: 100%;
       overflow: hidden;
-      //   height: 70%;
-      // vertical-align: middle;
     }
   }
 
@@ -100,12 +94,12 @@
 
   &_top {
     background-color: #f5f5f5;
-    padding: 0 4rem;
+    padding: 1rem 4rem;
   }
 
   &_bottom {
     background-color: $text-dark;
-    padding: 0 12rem;
+    padding: 1rem 12rem;
   }
 
   &_controls {

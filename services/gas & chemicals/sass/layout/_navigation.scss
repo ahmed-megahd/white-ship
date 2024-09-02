@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 2rem;
+    transform: translateY(1rem);
   }
 
   &_img {
@@ -37,9 +38,10 @@
     // overflow: hidden;
     img {
       display: inline-block;
-      transform: scale(1.6);
+      transform: scale(2);
       z-index: 11111;
       width: 100%;
+      overflow: hidden;
     }
   }
 
@@ -54,12 +56,12 @@
 
   &_top {
     background-color: #f5f5f5;
-    padding: 0 4rem;
+    padding: 2rem 4rem;
   }
 
   &_bottom {
     background-color: $color-secondary;
-    padding: 0 12rem;
+    padding: 1rem 12rem;
   }
 
   &_controls {
