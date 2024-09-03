@@ -13,7 +13,6 @@
 
   &_img {
     width: 20rem;
-    // overflow: hidden;
     transform: scale(1.6);
   }
 
@@ -39,7 +38,6 @@
   &_contact {
     width: 100%;
     padding: 2rem;
-    // margin-top: 4rem;
     display: flex;
     justify-content: space-between;
 
@@ -83,7 +81,6 @@
   &_socials {
     width: 100%;
     padding: 2rem 4rem;
-    // margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,9 +120,7 @@
 .section-main {
   width: 100%;
   height: 70rem;
-  // height: 100vh;
   position: relative;
-  // margin-top: -6rem;
   margin-bottom: 4rem;
 
   @media screen and (max-width: $large-bp) {
@@ -183,11 +178,8 @@
   }
   @media screen and (max-width: $small-bp) {
     padding-bottom: 0;
-    // margin-top: rem;
-    // margin-top: 100rem;
     &_wrapper {
       flex-direction: column;
-      // align-items: center;
     }
   }
 }
@@ -195,7 +187,6 @@
 .section-about {
   width: 100%;
   height: auto;
-  // height: 55rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -210,19 +201,13 @@
     padding: 6rem 2rem;
   }
 
-  // background-color: #f6f7f9;
-
   &_left {
     width: 50%;
-    // height: 100%;
-    // background-color: $color-secondary;
     height: 70rem;
     padding: 1rem 0;
 
     @media screen and (max-width: $large-bp) {
       width: 100%;
-      // height: 100%;
-      // height: 40rem;
       padding: 0;
     }
 
@@ -290,7 +275,6 @@
     width: 100%;
     padding: 1rem;
     margin-bottom: 3rem;
-    // padding-left: 0;
 
     &_grey {
       background-color: #f5f5f5;
@@ -307,7 +291,6 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  // height: 84rem;
   margin-bottom: 10rem;
   padding: 8rem 4rem;
   background-image: linear-gradient(
@@ -328,9 +311,6 @@
     padding: 4rem 2rem;
     margin-bottom: 8rem;
   }
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
 
   &_top {
     text-align: center;
@@ -366,7 +346,6 @@
   width: 100%;
   height: 100%;
   padding: 4rem 16rem;
-  // padding-bottom: 2rem;
 
   @media screen and (max-width: $extra-large-bp) {
     padding: 4rem;
@@ -396,6 +375,7 @@
   width: 100%;
   height: 100%;
   padding: 4rem;
+  background-color: $color-white;
 
   @media screen and (max-width: $large-bp) {
     padding: 6rem 2rem;
@@ -404,14 +384,9 @@
   @media screen and (max-width: $small-bp) {
     padding: 4rem 2rem;
   }
-  // background-color: #f6f7f9;
-  background-color: $color-white;
-  // background-color: #f5f5f5;
+
   &_top {
     width: 100%;
-    // display: flex;
-    // align-items: center;]
-    // justify-content: space-between;
     margin-bottom: 1.5rem;
 
     &_heading {
@@ -433,29 +408,19 @@
   }
 
   &_bottom {
-    // width: 100%;
     display: flex;
-    // flex-direction: column;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 4rem;
-    // padding: 0rem 1rem;
 
     .img-container {
-      // width: 80rem;
       width: 100%;
       height: 32rem;
-      // height: 100%;
-      // margin-bottom: 2rem;
       transform-origin: center;
       will-change: transform;
       overflow: hidden;
       position: relative;
-
-      // @media screen and (max-width: $small-bp) {
-      //   height: 100%;
-      // }
 
       img {
         display: inline-block;
@@ -540,8 +505,6 @@
   justify-content: space-around;
   padding: 6rem 4rem;
   width: 100%;
-  // height: 100%;
-  // height: 60rem;
   background-color: $color-secondary;
   background-image: linear-gradient(
     50deg,
@@ -584,7 +547,6 @@
   &_right {
     width: 40%;
     padding: 2rem 1rem;
-    // padding-top: 4rem;
 
     @media screen and (max-width: $large-bp) {
       width: 100%;

@@ -29,7 +29,6 @@
     position: relative;
     display: block;
     font-size: 1.8rem;
-    // font-family: $headers-font;
     color: $color-secondary;
     font-weight: 700;
     padding: 2rem;
@@ -39,7 +38,6 @@
 
   &_sub {
     display: none;
-    // background-color: ;
     transition: all 0.3s;
     li {
       border-top: 1px solid rgba(#000, 0.1);

@@ -1,17 +1,9 @@
 .value {
   width: 25%;
-  // height: 27rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-color: #f5f5f5;
-  // padding: 2rem;
-  // box-shadow: 0 5px 15px #e1e1e1;
-  // border-right: 3px solid #e1e1e1;
-  // border: 1px solid $primary-blue;
   &:not(:last-of-type) {
-    // margin-right: 2rem;
-
     @media screen and (max-width: $large-bp) {
       margin-right: 0;
       height: auto;
@@ -20,10 +12,6 @@
 
   @media screen and (max-width: $extra-large-bp) {
     width: 45%;
-
-    &:not(:last-of-type) {
-      // margin-right: -22rem;
-    }
   }
 
   @media screen and (max-width: $small-bp) {
@@ -32,11 +20,8 @@
   }
 
   &_img-wrapper {
-    // width: 12rem;
     height: 12rem;
     margin-bottom: 1rem;
-    // background-color: $color-primary;
-    // margin-bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +44,6 @@
     color: $color-secondary;
     font-weight: 700;
     text-transform: uppercase;
-    // margin-bottom: 0.5rem;
 
     @media screen and (max-width: $small-bp) {
       font-size: 2.4rem;
@@ -70,7 +54,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // margin-bottom: 1rem;
     font-family: $main-font;
     color: rgba($color: $color-primary, $alpha: 0.6);
 
@@ -94,8 +77,5 @@
 
   .btn-container {
     text-align: center;
-
-    .btn {
-    }
   }
 }

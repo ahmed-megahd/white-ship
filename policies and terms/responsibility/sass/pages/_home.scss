@@ -13,7 +13,6 @@
 
   &_img {
     width: 20rem;
-    // overflow: hidden;
     transform: scale(1.6);
   }
 
@@ -28,32 +27,6 @@
     align-items: center;
     cursor: pointer;
     font-size: 2.4rem;
-    // span {
-    //   position: absolute;
-    //   width: 2.4rem;
-    //   height: 2px;
-    //   opacity: 0.5;
-    //   transition: all 0.3s;
-    //   background-color: $color-white;
-
-    //   &:first-child {
-    //     transform: rotate(45deg);
-    //   }
-
-    //   &:last-child {
-    //     transform: rotate(135deg);
-    //   }
-    // }
-
-    // &:hover {
-    //   span:first-child {
-    //     transform: rotate(0deg);
-    //   }
-
-    //   span:last-child {
-    //     transform: rotate(180deg);
-    //   }
-    // }
   }
 
   .navigation {
@@ -64,7 +37,6 @@
   &_contact {
     width: 100%;
     padding: 2rem;
-    // margin-top: 4rem;
     display: flex;
     justify-content: space-between;
 
@@ -108,7 +80,6 @@
   &_socials {
     width: 100%;
     padding: 2rem 4rem;
-    // margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;

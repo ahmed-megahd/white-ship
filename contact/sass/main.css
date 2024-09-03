@@ -40,10 +40,6 @@ body {
   font-weight: 700;
   animation: slideRight2 2s;
 }
-.heading-main span {
-  background-color: #0f4c81;
-  padding: 0.5rem 1rem;
-}
 @media screen and (max-width: 479px) {
   .heading-main {
     text-align: center;
@@ -58,18 +54,6 @@ body {
   line-height: 1.1;
   margin-bottom: 4rem;
 }
-.heading-secondary span {
-  display: inline-block;
-  text-transform: uppercase;
-  color: #0f4c81;
-}
-.heading-secondary--1 {
-  color: #fff;
-}
-.heading-secondary--2 {
-  width: 75%;
-  text-transform: uppercase;
-}
 
 .heading-tertiary {
   display: inline-block;
@@ -79,9 +63,6 @@ body {
   color: rgba(51, 51, 51, 0.4);
   position: relative;
   margin-bottom: 1.5rem;
-}
-.heading-tertiary--1 {
-  color: rgba(255, 255, 255, 0.4);
 }
 
 .paragragh-text {
@@ -95,15 +76,6 @@ body {
 @media screen and (max-width: 991px) {
   .paragragh-text {
     font-size: 1.8rem;
-  }
-}
-.paragragh-text--center {
-  text-align: center;
-  width: 70%;
-}
-@media screen and (max-width: 991px) {
-  .paragragh-text--center {
-    width: 100%;
   }
 }
 .paragragh-text--center {
@@ -123,13 +95,6 @@ body {
   .paragragh-text--hero {
     width: 100%;
   }
-}
-.paragragh-text span {
-  color: #0f4c81;
-  font-weight: 700;
-}
-.paragragh-text--white {
-  color: #fff;
 }
 
 .rm-2 {
@@ -1050,7 +1015,7 @@ input[type=number] {
 }
 @media screen and (max-width: 479px) {
   .section-heading {
-    height: 70vh;
+    height: 75vh;
   }
 }
 .section-heading .icon-container {

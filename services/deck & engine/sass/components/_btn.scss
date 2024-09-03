@@ -14,7 +14,6 @@
   border: 0;
   position: relative;
   z-index: 1;
-  // border-radius: 0.6rem;
 
   &::before {
     content: "";
@@ -31,16 +30,6 @@
     transition: 0.3s;
   }
 
-  // &--value {
-  //   color: $color-secondary;
-  //   background-color: $color-white-bg;
-  //   font-style: italic;
-
-  //   &:hover {
-  //     color: $color-white;
-  //   }
-  // }
-
   &:hover {
     &::before {
       width: 90%;
@@ -49,66 +38,30 @@
     }
   }
 
-  &_submit {
-    width: 100%;
-    z-index: 1000;
+  &_white-bg {
+    padding: 1rem 3rem;
+    margin-top: 4rem;
+    background-color: inherit;
+    color: $color-white;
+    border: 2px solid $color-white;
+    font-weight: 800;
 
     &::before {
-      background-color: $color-primary !important;
+      background-color: $color-white;
     }
 
     &:hover {
-      color: $color-white;
-      z-index: 999;
+      color: $color-secondary;
     }
-  }
-
-  &-1 {
-    width: 45%;
-    font-size: $default-font-size;
-    animation: slideRight2 2s;
   }
 
   &--2 {
     background-color: $color-secondary;
 
     &:hover {
-      // color: $color-secondary;
       &::before {
         background-color: $color-primary;
       }
     }
-  }
-
-  &-service {
-    // display: none;
-    width: 100%;
-    padding: 1rem 2rem;
-    background-color: inherit;
-    border: 1px solid $color-secondary;
-    color: $color-secondary;
-    letter-spacing: 1px;
-
-    &:hover {
-      color: $color-white;
-    }
-
-    &:hover::before {
-      background-color: $color-secondary;
-    }
-  }
-}
-
-.btn-container {
-  width: 100%;
-
-  &-1 {
-    text-align: right;
-  }
-
-  &-service {
-    margin-top: 1rem;
-    width: 100%;
-    text-align: center;
   }
 }

@@ -35,7 +35,6 @@
 
   &_img {
     max-width: 18rem;
-    // overflow: hidden;
     img {
       display: inline-block;
       transform: scale(2);
@@ -65,19 +64,16 @@
   }
 
   &_controls {
-    // padding-right: 2rem;
     &_nav {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       list-style: none;
       padding: 0 1rem;
-      // padding-right: 2rem;
       font-family: $headers-font;
 
       &-item {
         color: $color-secondary;
-        // margin-left: 2rem;
 
         &:nth-child(n + 2) {
           border-left: 1.5px solid rgba($color: #111, $alpha: 0.3);
@@ -96,7 +92,6 @@
         i {
           font-size: 3rem;
           color: $color-primary;
-          // font-weight: 400;
           width: 3.6rem;
           height: 3.6rem;
           display: flex;
@@ -161,7 +156,6 @@
         min-width: 25rem;
         position: absolute;
         top: 100%;
-        // left: 20%;
         background-color: $color-white;
         background-color: $color-secondary;
         opacity: 0;
@@ -286,7 +280,6 @@
       background-color: $color-primary;
       color: $color-white;
       padding: 1rem 2rem;
-      // @include hover-transition;
 
       &:hover {
         background-color: $color-primary;

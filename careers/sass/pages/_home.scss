@@ -13,7 +13,6 @@
 
   &_img {
     width: 20rem;
-    // overflow: hidden;
     transform: scale(1.6);
   }
 
@@ -28,32 +27,6 @@
     align-items: center;
     cursor: pointer;
     font-size: 2.4rem;
-    // span {
-    //   position: absolute;
-    //   width: 2.4rem;
-    //   height: 2px;
-    //   opacity: 0.5;
-    //   transition: all 0.3s;
-    //   background-color: $color-white;
-
-    //   &:first-child {
-    //     transform: rotate(45deg);
-    //   }
-
-    //   &:last-child {
-    //     transform: rotate(135deg);
-    //   }
-    // }
-
-    // &:hover {
-    //   span:first-child {
-    //     transform: rotate(0deg);
-    //   }
-
-    //   span:last-child {
-    //     transform: rotate(180deg);
-    //   }
-    // }
   }
 
   .navigation {
@@ -64,7 +37,6 @@
   &_contact {
     width: 100%;
     padding: 2rem;
-    // margin-top: 4rem;
     display: flex;
     justify-content: space-between;
 
@@ -108,7 +80,6 @@
   &_socials {
     width: 100%;
     padding: 2rem 4rem;
-    // margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,14 +128,11 @@
   background-position: center;
   width: 100%;
   height: 90vh;
-  // text-align: center;
   display: flex;
   flex-direction: column;
-  // align-items: center;
   padding: 8rem 4rem;
   padding-top: 12rem;
   margin-bottom: 4rem;
-  //   margin-top: 2rem;
 
   @media screen and (max-width: $extra-large-bp) {
     height: 45vh;
@@ -176,7 +144,7 @@
   }
 
   @media screen and (max-width: $small-bp) {
-    height: 70vh;
+    height: 75vh;
   }
 
   .icon-container {
@@ -282,9 +250,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: space-around;
   padding: 6rem 4rem;
-  // padding-bottom: 4rem;
   width: 100%;
   background-color: $color-white;
 
@@ -294,9 +260,6 @@
   }
 
   &_left {
-    // width: 40%;
-    // padding: 1rem;
-
     @media screen and (max-width: $large-bp) {
       width: 100%;
     }
@@ -312,18 +275,14 @@
 
     &_bottom {
       width: 100%;
-      // color: $color-secondary;
     }
   }
 
   &_right {
     width: 100%;
-    // width: 52%;
-    // padding: 2rem 1rem;
 
     @media screen and (max-width: $large-bp) {
       width: 100%;
     }
-    // padding-top: 4rem;
   }
 }

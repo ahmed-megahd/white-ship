@@ -35,9 +35,7 @@ headerCtaToggle.addEventListener("click", () => {
 });
 
 headerCtaClose.addEventListener("click", () => {
-  // sectionAside.classList.toggle("section-aside-close");
   sectionAside.classList.remove("section-aside-open");
-  // overlay.style.display = "none";
 });
 
 //Slider Functionality Start
@@ -79,14 +77,3 @@ function showSlides(n, slideClassName, dotClassName) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active-dot";
 }
-
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   // direction: horizontal,
-//   // loop: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });

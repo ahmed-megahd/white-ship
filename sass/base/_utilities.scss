@@ -1,7 +1,3 @@
-.u-center-text {
-  text-align: center;
-}
-
 .middle-container {
   display: flex;
   align-items: center;
@@ -9,29 +5,11 @@
 
   @media screen and (max-width: $medium-bp) {
     flex-direction: column;
-
-    // width: 100%;
   }
-
-  &--1 {
-    width: 90%;
-  }
-}
-
-.mv-right {
-  transform: translateX(0) !important;
 }
 
 .rm-2 {
   margin-right: 2rem;
-}
-
-.sm-m-2 {
-  margin-top: 6rem;
-}
-
-.sm-m-4 {
-  margin-top: 12rem;
 }
 
 .no-border {

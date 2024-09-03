@@ -1,39 +1,6 @@
 .form {
   width: 100%;
 
-  &--cta {
-    margin-top: 6rem;
-  }
-  &_group {
-    width: 100%;
-    position: relative;
-
-    textarea {
-      width: 100%;
-      background-color: inherit;
-      border: 1px solid $color-white;
-      color: $color-white;
-      outline: none;
-      padding: 1rem 3rem;
-      font-size: 1.6rem;
-      font-weight: 400;
-
-      &::placeholder {
-        color: inherit;
-        font-weight: 400;
-        font-family: $main-font;
-      }
-    }
-  }
-
-  i {
-    position: absolute;
-    top: 50%;
-    right: 3rem;
-    transform: translateY(-50%);
-    color: $color-white;
-  }
-
   &_input {
     display: block;
     padding: 1rem 3rem;
@@ -50,28 +17,5 @@
     &::placeholder {
       color: rgba($color: $color-secondary, $alpha: 0.7);
     }
-
-    &--cta {
-      border: 1px solid $color-white;
-      color: $color-white;
-      background-color: inherit;
-      font-size: 1.6rem;
-
-      &::placeholder {
-        color: inherit;
-      }
-    }
   }
-}
-
-/* Hide the default up and down arrow icons */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0; /* Optional */
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
 }

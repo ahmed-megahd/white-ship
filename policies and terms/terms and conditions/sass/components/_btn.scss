@@ -14,7 +14,6 @@
   border: 0;
   position: relative;
   z-index: 1;
-  // border-radius: 0.6rem;
 
   &::before {
     content: "";
@@ -31,16 +30,6 @@
     transition: 0.3s;
   }
 
-  // &--value {
-  //   color: $color-secondary;
-  //   background-color: $color-white-bg;
-  //   font-style: italic;
-
-  //   &:hover {
-  //     color: $color-white;
-  //   }
-  // }
-
   &:hover {
     &::before {
       width: 90%;
@@ -49,32 +38,13 @@
     }
   }
 
-  &_submit {
-    width: 100%;
-  }
-
   &--2 {
     background-color: $color-secondary;
 
     &:hover {
-      // color: $color-secondary;
       &::before {
         background-color: $color-primary;
       }
     }
-  }
-}
-
-.btn-container {
-  width: 100%;
-
-  &-1 {
-    text-align: right;
-  }
-
-  &-service {
-    margin-top: 1rem;
-    width: 100%;
-    text-align: center;
   }
 }

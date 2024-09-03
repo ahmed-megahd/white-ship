@@ -13,7 +13,6 @@
 
   &_img {
     width: 20rem;
-    // overflow: hidden;
     transform: scale(1.6);
   }
 
@@ -39,7 +38,6 @@
   &_contact {
     width: 100%;
     padding: 2rem;
-    // margin-top: 4rem;
     display: flex;
     justify-content: space-between;
 
@@ -83,7 +81,6 @@
   &_socials {
     width: 100%;
     padding: 2rem 4rem;
-    // margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,24 +128,20 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 8rem 4rem;
-  padding-top: 12rem;
+  padding-top: 14rem;
 
   @media screen and (max-width: $extra-large-bp) {
     height: 45vh;
   }
 
-  // @media screen and (max-width: $large-bp) {
-  //   height: 60vh;
-  // }
-
   @media screen and (max-width: $small-bp) {
-    height: 70vh;
+    height: 75vh;
     margin-bottom: 2rem;
   }
 
@@ -186,7 +179,6 @@
   }
 
   @media screen and (max-width: $large-bp) {
-    // height: 100vh;
     height: auto;
   }
 
@@ -320,7 +312,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  // background-color: $color-white;
 
   &_top {
     width: 100%;
@@ -336,8 +327,6 @@
       width: 47%;
       padding: 2.5rem;
       margin-bottom: 4rem;
-      // border: 1px solid rgba($color-primary, 0.8);
-      // box-shadow: 0px 8px 12px rgba($color: #eee, $alpha: 1);
       background-color: $color-white;
 
       @media screen and (max-width: $medium-bp) {

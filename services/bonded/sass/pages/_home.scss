@@ -13,7 +13,6 @@
 
   &_img {
     width: 20rem;
-    // overflow: hidden;
     transform: scale(1.6);
   }
 
@@ -83,7 +82,6 @@
   &_socials {
     width: 100%;
     padding: 2rem 4rem;
-    // margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,7 +162,6 @@
 
   &_content {
     width: 70%;
-    // height: 100%;
     background-color: $color-white;
 
     @media screen and (max-width: $large-bp) {

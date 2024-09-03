@@ -3,11 +3,8 @@
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 4rem;
-  // color: $color-primary;
   font-family: $headers-font;
   font-weight: 700;
-  // animation: slideRight2 2s;
-
   @media screen and (max-width: $small-bp) {
     text-align: center;
   }
@@ -15,9 +12,7 @@
   span {
     background-color: $color-primary;
     padding: 0.5rem 1rem;
-    // border-radius: 0.5rem;
   }
-  // text-transform: uppercase;
 }
 
 .heading-secondary {
@@ -25,12 +20,8 @@
   font-family: $headers-font;
   font-weight: 700;
   color: $color-secondary;
-  // color: $color-secondary;
   line-height: 1.1;
-  // letter-spacing: -0.2rem;
-  margin-bottom: 4rem;
-  // margin-top: -1rem;
-  // margin-right: auto;
+  margin-bottom: 2rem;
 
   span {
     display: inline-block;
@@ -38,18 +29,11 @@
     color: $color-primary;
   }
 
-  // span::first-letter {
-  //   display: inline-block;
-  //   font-size: 8rem;
-  //   color: $color-primary;
-  // }
-
   &--1 {
     color: $color-white;
   }
 
   &--2 {
-    // font-size: 5.2rem;
     width: 75%;
     text-transform: uppercase;
   }
@@ -62,19 +46,10 @@
   font-family: $headers-font;
   color: rgba($color: $color-secondary, $alpha: 0.4);
   position: relative;
-  // border-bottom: 5px solid $color-secondary;
   margin-bottom: 1.5rem;
-  // span {
-  //   font-weight: 700;
-  //   display: inline-block;
-  //   margin-right: 0.5rem;
-  //   transform: rotate(35deg);
-  // }
 
   &--1 {
     color: rgba($color: $color-white, $alpha: 0.4);
-
-    // border-bottom: 5px solid $color-white;
   }
 }
 
@@ -92,7 +67,6 @@
 
   &--center {
     text-align: center;
-    // width: 70%;
 
     @media screen and (max-width: $large-bp) {
       width: 100%;

@@ -39,11 +39,6 @@ body {
   color: #fff;
   font-family: "Inter", "open-sans";
   font-weight: 700;
-  animation: slideRight2 2s;
-}
-.heading-main span {
-  background-color: #0f4c81;
-  padding: 0.5rem 1rem;
 }
 
 .heading-secondary {
@@ -54,18 +49,6 @@ body {
   line-height: 1.1;
   margin-bottom: 4rem;
 }
-.heading-secondary span {
-  display: inline-block;
-  text-transform: uppercase;
-  color: #0f4c81;
-}
-.heading-secondary--1 {
-  color: #fff;
-}
-.heading-secondary--2 {
-  width: 75%;
-  text-transform: uppercase;
-}
 
 .heading-tertiary {
   display: inline-block;
@@ -75,9 +58,6 @@ body {
   color: rgba(51, 51, 51, 0.4);
   position: relative;
   margin-bottom: 1.5rem;
-}
-.heading-tertiary--1 {
-  color: rgba(255, 255, 255, 0.4);
 }
 
 .paragragh-text {
@@ -103,10 +83,6 @@ body {
   .paragragh-text--w7 {
     width: 100%;
   }
-}
-.paragragh-text span {
-  color: #333;
-  font-weight: 700;
 }
 
 .pd-4 {
@@ -1131,7 +1107,7 @@ input[type=number] {
 }
 @media screen and (max-width: 479px) {
   .section-heading {
-    height: 70vh;
+    height: 75vh;
   }
 }
 .section-heading .icon-container {

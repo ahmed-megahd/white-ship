@@ -27,7 +27,6 @@
   @media screen and (max-width: $medium-bp) {
     width: 100%;
   }
-  // border-radius: 0.6rem;
 
   &::before {
     content: "";
@@ -80,7 +79,6 @@
     background-color: $color-secondary;
 
     &:hover {
-      // color: $color-secondary;
       &::before {
         background-color: $color-primary;
       }
@@ -88,17 +86,11 @@
   }
 
   &-service {
-    // display: none;
     width: 100%;
     padding: 1rem 2rem;
     background-color: $color-white;
-    // border: 1px solid $color-secondary;
     color: $color-secondary;
     letter-spacing: 1px;
-
-    // &--nb {
-    //   border: none;
-    // }
 
     &:hover {
       color: $color-white;
@@ -118,7 +110,6 @@
   }
 
   &-service {
-    // margin-top: 1rem;
     width: 50%;
     text-align: center;
 
